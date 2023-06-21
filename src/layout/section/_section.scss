@@ -1,0 +1,62 @@
+.section {
+  width: 100%;
+  padding: 0 5.5rem;
+
+  &__heading-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 4.5rem 0;
+  }
+
+  &__progress {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__progress-bar {
+    margin-bottom: 1rem;
+  }
+
+  &__progress-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__progress-text {
+    font-size: 1.3rem;
+  }
+
+  &__research-top {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  &__research-middle {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem auto;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 10rem;
+  }
+
+  &__research-bottom {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
