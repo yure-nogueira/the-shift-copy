@@ -7,7 +7,7 @@ gsap.from('[animation="progress-bar"]', {
   xPercent: -100,
   scrollTrigger: {
     trigger: '[animation="progress-bar"]',
-    end: "bottom 90%",
+    end: "bottom 75%",
     scrub: 1,
     // markers: true,
   },

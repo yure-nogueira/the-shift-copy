@@ -13,18 +13,3 @@ gsap.from('[animation="heading"]', {
     // markers: true,
   },
 });
-
-gsap.fromTo(
-  '[animation="section-title"]',
-  {
-    y: 50,
-  },
-  {
-    y: -50,
-    scrollTrigger: {
-      trigger: '[animation="section-title"]',
-      scrub: 1,
-      // markers: true,
-    },
-  }
-);
