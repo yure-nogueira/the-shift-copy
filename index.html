@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/main.scss" />
+    <title>THE SHIFT</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="header" animation="header">
+        <h1>
+          <a class="header__title" href="#"> The Shift </a>
+        </h1>
+
+        <nav class="header__navigation" animation="menu">
+          <button
+            class="header__menu-button"
+            animation="menu-button"
+            type="button"
+          >
+            Menu
+          </button>
+
+          <ul class="header__links" animation="menu-links">
+            <li class="header__link header__link--active">
+              <a href="#" animation="menu-link">Home</a>
+            </li>
+            <li class="header__link">
+              <a href="#" animation="menu-link">Project</a>
+            </li>
+            <li class="header__link">
+              <a href="#" animation="menu-link">Research</a>
+            </li>
+            <li class="header__link">
+              <a href="#" animation="menu-link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main"></main>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
