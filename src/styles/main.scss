@@ -1,4 +1,9 @@
-@import './base/base';
-@import './base/utilities';
+// base
+@import "./base/base";
+@import "./base/utilities";
 
-@import './layout/header';
+// components
+@import "./components/cursor/cursor";
+
+// layout
+@import "./layout/header";
