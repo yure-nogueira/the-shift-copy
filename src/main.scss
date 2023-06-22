@@ -12,6 +12,8 @@
 @import "./components/cursor/cursor";
 @import "./components/logo/logo";
 @import "./components/progress-bar/progress-bar";
+@import "./components/perfil/perfil";
+@import "./components/forward-slider/forward-slider";
 
 // layout
 @import "./layout/footer/footer";
@@ -21,3 +23,5 @@
 // pages
 @import "./pages/research/research";
 @import "./pages/about/about";
+@import "./styles/base/base";
+@import "./styles/base/utilities";
