@@ -1,10 +1,10 @@
 // components
+import "./components/carousel/carousel";
 import "./components/cursor/cursor";
 // import "./components/menu/menu";
 import "./components/progress-bar/progress-bar";
 
 // layout
-import "./layout/footer/footer";
 import "./layout/section/section";
 
 // pages

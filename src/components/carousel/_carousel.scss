@@ -1,0 +1,31 @@
+.carousel {
+  display: flex;
+  gap: 6rem;
+
+  @include breakpoint("md") {
+    font-size: 4.5rem;
+  }
+
+  @include breakpoint("sm") {
+    font-size: 3rem;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 15rem;
+  }
+
+  &__span {
+    text-transform: uppercase;
+    font-size: 7rem;
+    line-height: 1;
+    white-space: nowrap;
+
+    @include breakpoint("md") {
+      font-size: 5.5rem;
+    }
+
+    @include breakpoint("sm") {
+      font-size: 4rem;
+    }
+  }
+}
