@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 6rem;
+  cursor: pointer;
 
   &:not(:first-child) {
     border-top: 1px solid var(--color-border-line);
@@ -19,6 +20,10 @@
 
   &__right {
     flex: 1;
+
+    a {
+      text-decoration: underline !important;
+    }
   }
 
   &__country {
@@ -35,5 +40,50 @@
     font-size: 1.6rem;
     font-weight: 200;
     max-width: 300px;
+
+    &--complemento {
+      margin: 2.4rem 0;
+    }
+  }
+
+  &__container-button {
+    margin: auto;
+  }
+
+  &__fake-element {
+    width: 5.92rem;
+  }
+
+  &__button {
+    display: none;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 16px;
+    border: 1px solid var(--color-border-line-dark);
+    transition: all .3s ease-in;
+  }
+
+  &--accordion {
+    .perfil__button {
+      display: block;
+    }
+
+    .perfil__text {
+      display: none;
+    }
+
+    &:hover {
+      .perfil__button {
+        background: var(--color-dark);
+        border: 1px solid var(--color-dark);
+        color: var(--color-light);
+      }
+    }
+  }
+
+  &--open {
+    .perfil__text {
+      display: block;
+    }
   }
 }

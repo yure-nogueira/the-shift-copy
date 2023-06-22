@@ -2,6 +2,10 @@
   display: flex;
   gap: 6rem;
 
+  &--color-light {
+    color: var(--color-light);
+  }
+
   @include breakpoint("md") {
     font-size: 4.5rem;
   }

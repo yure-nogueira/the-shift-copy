@@ -11,7 +11,8 @@ import './components/forward-slider/forward-slider';
 import './layout/section/section';
 
 // pages
-import './pages/research/research';
+import "./pages/about/about";
+import "./pages/research/research";
 
 // utilities
 import './utilities/animation-text';
