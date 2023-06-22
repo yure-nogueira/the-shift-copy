@@ -1,8 +1,10 @@
+// abstracts
+@import "./styles/abstracts/mixins";
+@import "./styles/abstracts/variables";
+
 // base
 @import "./styles/base/base";
-@import "./styles/base/mixins";
 @import "./styles/base/utilities";
-@import "./styles/base/variables";
 
 // components
 @import "./components/arrow-button/arrow-button";

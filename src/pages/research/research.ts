@@ -14,7 +14,7 @@ import "./../../utilities/animation-text";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { DOM, scrollPosition } from "./../../utilities/constants";
+import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,8 +47,8 @@ images.forEach((image) => {
     opacity: 0,
     scrollTrigger: {
       trigger: image,
-      start: scrollPosition.start,
-      end: scrollPosition.end,
+      start: SCROLL_POSITION.start,
+      end: SCROLL_POSITION.end,
       scrub: 1,
       // markers: true,
     },
@@ -61,8 +61,8 @@ descriptions.forEach((description) => {
     opacity: 0,
     scrollTrigger: {
       trigger: description,
-      start: scrollPosition.start,
-      end: scrollPosition.end,
+      start: SCROLL_POSITION.start,
+      end: SCROLL_POSITION.end,
       scrub: 1,
       // markers: true,
     },

@@ -9,7 +9,25 @@
   </head>
   <body>
     <div class="page-container">
-      <div class="intro"></div>
+      <div class="intro">
+        <div class="intro__card" data-cursor="hover">hover</div>
+        <div class="intro__card" data-cursor="drag">drag</div>
+        <div class="intro__card" data-cursor="explore">explore</div>
+        <div
+          class="intro__card"
+          data-cursor="image"
+          data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193649/IMG_7015-720x720.jpg.webp"
+        >
+          image
+        </div>
+        <div
+          class="intro__card"
+          data-cursor="image"
+          data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193607/google-earth-view-1684-720x720.jpg.webp"
+        >
+          image
+        </div>
+      </div>
       <main class="main research">
         <section class="section">
           <div class="section__heading-container">
@@ -249,6 +267,17 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <div class="cursor">
+      <div class="cursor__circle">
+        <div class="cursor__text-container">
+          <span class="cursor__span">Explore</span>
+        </div>
+      </div>
+      <div class="cursor__image-container">
+        <div class="cursor__image-background"></div>
+      </div>
     </div>
 
     <script type="module" src="./research.ts"></script>

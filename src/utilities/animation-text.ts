@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { DOM, scrollPosition } from "./constants";
+import { DOM, SCROLL_POSITION } from "./constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,8 +13,8 @@ texts.forEach((text) => {
     yPercent: 100,
     scrollTrigger: {
       trigger: text,
-      start: scrollPosition.start,
-      end: scrollPosition.end,
+      start: SCROLL_POSITION.start,
+      end: SCROLL_POSITION.end,
       scrub: 1,
       // markers: true,
     },

@@ -1,0 +1,70 @@
+.cursor {
+  position: relative;
+
+  &__circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background: var(--color-cursor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  &__text-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__span {
+    color: var(--color-light);
+    text-transform: uppercase;
+    font-size: 0.35rem;
+    opacity: 0;
+    margin-top: 1px;
+  }
+
+  &__image-container {
+    height: 22.5rem;
+    width: 37.5rem;
+    overflow: hidden;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  &__image-background {
+    // background: url("https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193558/google-earth-view-1070-720x720.jpg.webp")
+    //   no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+[data-cursor="hover"] {
+  cursor: pointer;
+}
+
+[data-cursor="drag"] {
+  cursor: grab;
+  // cursor: grabbing;
+}
+
+[data-cursor="explore"] {
+  cursor: pointer;
+}

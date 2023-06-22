@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { DOM, scrollPosition } from "./../../utilities/constants";
+import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,8 +18,8 @@ progressBars.forEach((progressBar) => {
     xPercent: -100,
     scrollTrigger: {
       trigger: progressBar,
-      start: scrollPosition.start,
-      end: scrollPosition.end,
+      start: SCROLL_POSITION.start,
+      end: SCROLL_POSITION.end,
       scrub: 1,
       // markers: true,
     },

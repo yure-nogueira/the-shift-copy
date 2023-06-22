@@ -12,7 +12,14 @@ export const DOM = {
   researchTitle: "research-title",
 };
 
-export const scrollPosition = {
+export const SCROLL_POSITION = {
   start: "top 80%",
   end: "top 60%",
+};
+
+export const HOVER_TYPES = {
+  drag: "drag",
+  explore: "explore",
+  hover: "hover",
+  image: "image",
 };
