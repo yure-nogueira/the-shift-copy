@@ -34,5 +34,10 @@
 
   &__progress-text {
     font-size: 1.3rem;
+
+    &--none {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 }
