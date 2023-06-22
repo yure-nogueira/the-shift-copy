@@ -1,11 +1,12 @@
 .progress-bar {
+  --progress-fill-color: var(--color-dark);
   background-color: transparent;
   height: 1px;
   width: 100%;
   overflow: hidden;
 
   &__fill {
-    background-color: var(--color-dark);
+    background-color: var(--progress-fill-color);
     height: 100%;
     width: 100%;
   }

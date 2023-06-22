@@ -1,6 +1,8 @@
 // base
 @import "./styles/base/base";
+@import "./styles/base/mixins";
 @import "./styles/base/utilities";
+@import "./styles/base/variables";
 
 // components
 @import "./components/arrow-button/arrow-button";
@@ -8,6 +10,7 @@
 @import "./components/progress-bar/progress-bar";
 
 // layout
+@import "./layout/footer/footer";
 @import "./layout/header/header";
 @import "./layout/section/section";
 

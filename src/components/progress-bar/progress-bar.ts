@@ -1,13 +1,37 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { DOM, scrollPosition } from "./../../utilities/constants";
+
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from('[animation="progress-bar"]', {
+const progressBars = document.querySelectorAll(
+  `[animation=${DOM.progressBar}]`
+);
+
+const progressBarLast = document.querySelector(
+  `[animation=${DOM.progressBarLast}]`
+);
+
+progressBars.forEach((progressBar) => {
+  gsap.from(progressBar, {
+    xPercent: -100,
+    scrollTrigger: {
+      trigger: progressBar,
+      start: scrollPosition.start,
+      end: scrollPosition.end,
+      scrub: 1,
+      // markers: true,
+    },
+  });
+});
+
+gsap.from(progressBarLast, {
   xPercent: -100,
   scrollTrigger: {
-    trigger: '[animation="progress-bar"]',
-    end: "bottom 75%",
+    trigger: progressBarLast,
+    start: "top 95%",
+    end: "top 90%",
     scrub: 1,
     // markers: true,
   },
