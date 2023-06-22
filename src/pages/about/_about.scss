@@ -1,0 +1,49 @@
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: yellow;
+}
+
+.for-scroll {
+  height: 5000px;
+}
+
+.about {
+  background: var(--color-light);
+  color: var(--color-dark);
+
+  &__top {
+    margin-top: 9rem;
+  }
+
+  &__container-title {
+    max-width: 89rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 200;
+  }
+
+  &__container-text {
+    max-width: 89rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10rem auto 15rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: justify;
+    flex: 0 50%;
+    padding: 0 2.5rem;
+  }
+}
+
