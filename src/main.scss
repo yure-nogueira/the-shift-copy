@@ -1,22 +1,25 @@
 // base
-@import "./styles/base/base";
-@import "./styles/base/mixins";
-@import "./styles/base/utilities";
-@import "./styles/base/variables";
+@import './styles/base/base';
+@import './styles/base/mixins';
+@import './styles/base/utilities';
+@import './styles/base/variables';
 
 // components
-@import "./components/arrow-button/arrow-button";
-@import "./components/carousel/carousel";
-@import "./components/cursor/cursor";
-@import "./components/logo/logo";
-@import "./components/progress-bar/progress-bar";
-@import "./components/perfil/perfil";
+@import './components/arrow-button/arrow-button';
+@import './components/carousel/carousel';
+@import './components/cursor/cursor';
+@import './components/logo/logo';
+@import './components/progress-bar/progress-bar';
+@import './components/perfil/perfil';
+@import './components/forward-slider/forward-slider';
 
 // layout
-@import "./layout/footer/footer";
-@import "./layout/header/header";
-@import "./layout/section/section";
+@import './layout/footer/footer';
+@import './layout/header/header';
+@import './layout/section/section';
 
 // pages
-@import "./pages/research/research";
-@import "./pages/about/about";
+@import './pages/research/research';
+@import './pages/about/about';
+@import './styles/base/base';
+@import './styles/base/utilities';
