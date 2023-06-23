@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   padding: 6rem;
-  cursor: pointer;
+  // cursor: pointer;
 
-  &:not(:first-child) {
-    border-top: 1px solid var(--color-border-line);
-  }
+  // &:not(:first-child) {
+  //   border-top: 1px solid var(--color-border-line);
+  // }
 
   &__left {
     flex: 1;
@@ -60,7 +60,7 @@
     background: transparent;
     border-radius: 16px;
     border: 1px solid var(--color-border-line-dark);
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
   }
 
   &--accordion {

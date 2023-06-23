@@ -10,7 +10,8 @@ const texts = document.querySelectorAll(`[animation=${DOM.text}]`);
 texts.forEach((text) => {
   gsap.from(text, {
     opacity: 0,
-    yPercent: 100,
+    // yPercent: 100,
+    y: 20,
     scrollTrigger: {
       trigger: text,
       start: SCROLL_POSITION.start,

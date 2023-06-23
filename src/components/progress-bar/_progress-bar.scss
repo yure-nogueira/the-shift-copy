@@ -5,6 +5,14 @@
   width: 100%;
   overflow: hidden;
 
+  &--light {
+    --progress-fill-color: var(--color-dark);
+  }
+
+  &--light-grey {
+    --progress-fill-color: var(--color-border-line);
+  }
+
   &__fill {
     background-color: var(--progress-fill-color);
     height: 100%;
