@@ -13,13 +13,14 @@
     max-width: 874px;
     width: 100%;
     height: 2.6rem;
+    overflow: hidden;
   }
 
   &__figure {
     width: 100%;
     height: 2.6rem;
     background-image: url(https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/24011902/logo-1200x537.png.webp);
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
 
     &--01 {
       background-position: 191px -10px;
@@ -28,12 +29,12 @@
 
     &--02 {
       background-position: -569px -32px;
-      background-size: 867px
+      background-size: 867px;
     }
 
     &--03 {
       background-position: -386px -65px;
-      background-size: 867px
+      background-size: 867px;
     }
 
     &--04 {
@@ -43,7 +44,7 @@
 
     &--05 {
       background-position: 20px -130px;
-    background-size: 836px;
+      background-size: 836px;
     }
 
     &--06 {
