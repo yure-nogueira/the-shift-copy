@@ -55,4 +55,12 @@
       opacity: 0;
     }
   }
+
+  &--about-dark {
+    background: var(--color-dark);
+    color: var(--color-light);
+    padding: 3rem 0 10rem;
+    position: relative;
+    height: calc(100vh - 130px);
+  }
 }

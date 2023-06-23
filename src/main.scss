@@ -7,13 +7,14 @@
 @import "./styles/base/utilities";
 
 // components
-@import "./components/arrow-button/arrow-button";
-@import "./components/carousel/carousel";
-@import "./components/cursor/cursor";
-@import "./components/logo/logo";
-@import "./components/progress-bar/progress-bar";
-@import "./components/perfil/perfil";
-@import "./components/forward-slider/forward-slider";
+@import './components/arrow-button/arrow-button';
+@import './components/carousel/carousel';
+@import './components/cursor/cursor';
+@import './components/forward-slider/forward-slider';
+@import './components/logo/logo';
+@import './components/perfil/perfil';
+@import './components/progress-bar/progress-bar';
+@import './components/swiper/swiper';
 
 // layout
 @import "./layout/footer/footer";
