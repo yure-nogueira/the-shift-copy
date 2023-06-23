@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
   //centeredSlides: true,
   slidesPerView: 1.5,
   freeMode: true,
-  //loop: true,
+  loop: true,
   //spaceBetween: 80,
   // mousewheel: {
   //   eventsTarget: '.swiper',
@@ -23,14 +23,14 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
   },
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 3
-  //   },
-  //   996: {
-  //     slidesPerView: 4
-  //   }
-  // }
+  breakpoints: {
+    1240: {
+      slidesPerView: 2.5
+    },
+    // 1520: {
+    //   slidesPerView: 2.5
+    // }
+  }
 });
 
 // swiper.on('progress', ({ progressLoop }) => {
