@@ -5,7 +5,11 @@ import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const progressBars = document.querySelectorAll(
+// const progressBars = document.querySelectorAll(
+//   `[animation=${DOM.progressBar}]`
+// );
+
+const progressBars = gsap.utils.toArray<HTMLElement>(
   `[animation=${DOM.progressBar}]`
 );
 
@@ -14,25 +18,30 @@ const progressBarLast = document.querySelector(
 );
 
 progressBars.forEach((progressBar) => {
-  gsap.from(progressBar, {
-    xPercent: -100,
+  const progressBarTL = gsap.timeline({
+    defaults: { duration: 0.8, ease: "power1.inOut" },
     scrollTrigger: {
       trigger: progressBar,
       start: SCROLL_POSITION.start,
-      end: SCROLL_POSITION.end,
-      scrub: 1,
+      toggleActions: "play none none reverse",
       // markers: true,
     },
   });
+
+  progressBarTL.from(progressBar, {
+    xPercent: -100,
+  });
 });
 
-gsap.from(progressBarLast, {
-  xPercent: -100,
+const progressBarLastTL = gsap.timeline({
+  defaults: { duration: 0.8, ease: "power1.inOut" },
   scrollTrigger: {
     trigger: progressBarLast,
-    start: "top 95%",
-    end: "top 90%",
-    scrub: 1,
+    toggleActions: "play none none reverse",
     // markers: true,
   },
+});
+
+progressBarLastTL.from(progressBarLast, {
+  xPercent: -100,
 });

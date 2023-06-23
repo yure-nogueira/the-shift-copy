@@ -1,5 +1,5 @@
 // components
-import "./../../components/cursor/cursor";
+// import "./../../components/cursor/cursor";
 import "./../../components/logo/logo";
 import "./../../components/menu/menu";
 import "./../../components/perfil/perfil";
