@@ -1,6 +1,6 @@
 export const DOM = {
-  carouselFirst: "carousel-first",
-  carouselSecond: "carousel-second",
+  carouselForward: "carousel-forward",
+  carouselBackward: "carousel-backward",
   header: "header",
   progressBar: "progress-bar",
   progressBarLast: "progress-bar-last",

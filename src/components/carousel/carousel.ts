@@ -1,30 +1,16 @@
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+import { horizontalLoop } from "./../../utilities/gsap/helper-functions/helper-functions";
+import { DOM } from "./../../utilities/constants";
 
-gsap.fromTo(
-  '[animation="carousel-first"]',
-  {
-    xPercent: 0,
-  },
-  {
-    xPercent: -50,
-    repeat: -1,
-    duration: 50,
-    ease: "none",
-  }
-);
+const forward = gsap.utils.toArray(`[animation=${DOM.carouselForward}]`);
+const backward = gsap.utils.toArray(`[animation=${DOM.carouselBackward}]`);
 
-gsap.fromTo(
-  '[animation="carousel-second"]',
-  {
-    xPercent: 0,
-  },
-  {
-    xPercent: 50,
-    repeat: -1,
-    duration: 50,
-    ease: "none",
-  }
-);
+horizontalLoop(forward, {
+  repeat: -1,
+});
+
+horizontalLoop(backward, {
+  reversed: true,
+  repeat: -1,
+});

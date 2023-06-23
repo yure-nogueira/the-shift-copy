@@ -1,6 +1,7 @@
 // components
 import "./../../components/carousel/carousel";
 import "./../../components/cursor/cursor";
+import "./../../components/forward-slider/forward-slider";
 import "./../../components/menu/menu";
 import "./../../components/progress-bar/progress-bar";
 

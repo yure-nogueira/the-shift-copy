@@ -21,12 +21,18 @@ const imageElements = document.querySelectorAll(
   `[data-cursor=${HOVER_TYPES.image}]`
 );
 
-window.addEventListener("mousemove", (e) => {
-  gsap.to([cursor, imageContainer], {
+let xTo = gsap.quickTo([cursor, imageContainer], "x", {
     duration: 0.4,
-    x: e.pageX,
-    y: e.pageY,
+    ease: "power3",
+  }),
+  yTo = gsap.quickTo([cursor, imageContainer], "y", {
+    duration: 0.4,
+    ease: "power3",
   });
+
+window.addEventListener("mousemove", (e) => {
+  xTo(e.clientX);
+  yTo(e.clientY);
 });
 
 [hoverableElements, imageElements].forEach((nodeList) => {
@@ -34,7 +40,7 @@ window.addEventListener("mousemove", (e) => {
 
   array.forEach((element) => {
     const type = (element as HTMLElement).dataset.cursor;
-    console.log(element);
+
     if (!type) return;
 
     element.addEventListener("mouseenter", () => {
