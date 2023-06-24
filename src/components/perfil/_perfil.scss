@@ -69,7 +69,10 @@
     }
 
     .perfil__text {
-      display: none;
+      display: block;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
     }
 
     &:hover {
@@ -78,12 +81,6 @@
         border: 1px solid var(--color-dark);
         color: var(--color-light);
       }
-    }
-  }
-
-  &--open {
-    .perfil__text {
-      display: block;
     }
   }
 }
