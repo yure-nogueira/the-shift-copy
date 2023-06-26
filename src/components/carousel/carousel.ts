@@ -6,11 +6,25 @@ import { DOM } from "./../../utilities/constants";
 const forward = gsap.utils.toArray(`[animation=${DOM.carouselForward}]`);
 const backward = gsap.utils.toArray(`[animation=${DOM.carouselBackward}]`);
 
-horizontalLoop(forward, {
-  repeat: -1,
+forward.forEach((carousel) => {
+  const carouselSpan = gsap.utils.toArray(
+    `[animation=${DOM.carouselForwardSpan}]`,
+    carousel as HTMLElement
+  );
+  console.log(carouselSpan);
+  horizontalLoop(carouselSpan, {
+    repeat: -1,
+  });
 });
 
-horizontalLoop(backward, {
-  reversed: true,
-  repeat: -1,
+backward.forEach((carousel) => {
+  const carouselSpan = gsap.utils.toArray(
+    `[animation=${DOM.carouselBackwardSpan}]`,
+    carousel as HTMLElement
+  );
+  console.log(carouselSpan);
+  horizontalLoop(carouselSpan, {
+    reversed: true,
+    repeat: -1,
+  });
 });
