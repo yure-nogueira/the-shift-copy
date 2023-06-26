@@ -5,6 +5,11 @@ export const DOM = {
   progressBar: "progress-bar",
   progressBarLast: "progress-bar-last",
   text: "text",
+  title: "title",
+  titleScroll: "title-scroll",
+
+  // intro
+  introText: "intro-text",
 
   // research page
   researchDescriptions: "research-description",
