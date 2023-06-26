@@ -40,13 +40,14 @@
     transform: translate(-50%, -50%);
     top: 0;
     left: 0;
+    // top: 40%;
+    // left: 65%;
     pointer-events: none;
     visibility: hidden;
   }
 
   &__image-background {
-    // background: url("https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193558/google-earth-view-1070-720x720.jpg.webp")
-    //   no-repeat;
+    // background: url("https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193558/google-earth-view-1070-720x720.jpg.webp");
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -62,7 +63,6 @@
 
 [data-cursor="drag"] {
   cursor: grab;
-  // cursor: grabbing;
 }
 
 [data-cursor="explore"] {

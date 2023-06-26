@@ -147,4 +147,8 @@
     align-items: center;
     justify-content: center;
   }
+
+  &__text {
+    z-index: 2;
+  }
 }
