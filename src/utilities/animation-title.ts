@@ -17,19 +17,21 @@ gsap.from(title.chars, {
   stagger: { amount: 0.5 },
 });
 
-titlesScroll.forEach((title) => {
-  const titleScroll = new SplitType(title as HTMLElement[]);
-  gsap.from(titleScroll.chars, {
-    opacity: 0,
-    y: 100,
-    scale: 0.9,
-    stagger: { amount: 0.4 },
-    scrollTrigger: {
-      trigger: title,
-      start: SCROLL_POSITION.start,
-      end: SCROLL_POSITION.end,
-      toggleActions: "play none none reverse",
-      // markers: true,
-    },
+if (titlesScroll) {
+  titlesScroll.forEach((title) => {
+    const titleScroll = new SplitType(title as HTMLElement[]);
+    gsap.from(titleScroll.chars, {
+      opacity: 0,
+      y: 100,
+      scale: 0.9,
+      stagger: { amount: 0.4 },
+      scrollTrigger: {
+        trigger: title,
+        start: SCROLL_POSITION.start,
+        end: SCROLL_POSITION.end,
+        toggleActions: "play none none reverse",
+        // markers: true,
+      },
+    });
   });
-});
+}

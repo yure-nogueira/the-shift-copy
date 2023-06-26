@@ -7,16 +7,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const texts = document.querySelectorAll(`[animation=${DOM.text}]`);
 
-texts.forEach((text) => {
-  gsap.from(text, {
-    opacity: 0,
-    y: 20,
-    scrollTrigger: {
-      trigger: text,
-      start: SCROLL_POSITION.start,
-      end: SCROLL_POSITION.end,
-      toggleActions: "play none none reverse",
-      // markers: true,
-    },
+if (texts) {
+  texts.forEach((text) => {
+    gsap.from(text, {
+      opacity: 0,
+      y: 20,
+      scrollTrigger: {
+        trigger: text,
+        start: SCROLL_POSITION.start,
+        end: SCROLL_POSITION.end,
+        toggleActions: "play none none reverse",
+        // markers: true,
+      },
+    });
   });
-});
+}
