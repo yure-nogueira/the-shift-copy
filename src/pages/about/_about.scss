@@ -44,6 +44,10 @@
     text-align: justify;
     flex: 0 50%;
     padding: 0 2.5rem;
+
+    @include breakpoint("md") {
+      flex: 0 85%;
+    }
   }
 
   &__container-subtitle {
@@ -75,6 +79,11 @@
     text-align: justify;
     padding: 0 2.5rem;
     flex: 0 30%;
+
+    @include breakpoint("md") {
+      flex: 0 85%;
+      margin-top: 4rem;
+    }
   }
 
   &__carousel {
@@ -110,6 +119,14 @@
   display: flex;
   padding: 0 14.8rem;
 
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+
+  @include breakpoint("md") {
+    flex-direction: column;
+  }
+
   &__left {
     flex: 1;
     padding: 0 2.5rem;
@@ -126,6 +143,10 @@
     flex-direction: column;
     padding: 0 2.5rem;
     justify-content: space-between;
+
+    @include breakpoint("md") {
+      margin-top: 4rem;
+    }
   }
   
   &__text {
@@ -147,6 +168,14 @@
 .profile {
   display: flex;
   padding: 0 14.8rem;
+
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+
+  @include breakpoint("md") {
+    flex-direction: column;
+  }
 
   &__column {
     flex: 1;
@@ -177,6 +206,10 @@
   text-align: center;
   padding: 0 18.3rem;
   font-weight: 200;
+
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
 }
 
 .partners {
@@ -184,12 +217,26 @@
   justify-content: center;
   padding: 0 18.3rem;
 
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+
+  @include breakpoint("md") {
+    flex-direction: column;
+  }
+
   &__item {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 26.2rem;
+
+    @include breakpoint("md") {
+      &:last-child {
+        margin-top: 4rem;
+      }
+    }
   }
 
   &__title {

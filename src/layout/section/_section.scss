@@ -15,6 +15,10 @@
     font-weight: 400;
     text-align: center;
     margin-top: 10rem;
+
+    @include breakpoint("md") {
+      font-size: 5rem;
+    }
   }
 
   &__heading-container {
@@ -66,5 +70,10 @@
     padding: 3rem 0 10rem;
     position: relative;
     height: calc(100vh - 130px);
+
+    @include breakpoint("md") {
+      padding: 3rem 0 3rem;
+      height: calc(100vh - 364px);
+    }
   }
 }

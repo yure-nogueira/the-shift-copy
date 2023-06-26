@@ -74,8 +74,16 @@
     min-height: 498px;
     overflow: hidden;
 
-     @media screen and (min-width: 1240px) {
+    @media screen and (min-width: 1240px) {
       min-height: 392px;
+    }
+
+    @include breakpoint("lg") {
+      min-height: 392px;
+    }
+
+    @include breakpoint("sm") {
+      min-height: 264px;
     }
   }
 
