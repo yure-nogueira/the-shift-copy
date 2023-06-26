@@ -16,7 +16,7 @@ footerLinks.forEach((link) => {
       start: !isSocial ? SCROLL_POSITION.start : "top bottom",
       end: !isSocial ? SCROLL_POSITION.end : "top bottom",
       toggleActions: "play none none reverse",
-      markers: true,
+      // markers: true,
     },
   });
 
