@@ -9,8 +9,31 @@
   </head>
   <body>
     <div class="page-container">
-      <div class="intro"></div>
       <main class="main about">
+        <section class="intro">
+          <div class="intro__container">
+            <div class="intro__overflow">
+              <h1 class="intro__title" animation="title">About</h1>
+            </div>
+            <div class="intro__overflow intro__overflow--margin-bottom">
+              <h1 class="intro__title" animation="title">the shift</h1>
+            </div>
+            <div class="intro__overflow">
+              <p class="intro__text" animation="intro-text">
+                Created for the things
+              </p>
+            </div>
+            <div class="intro__overflow">
+              <p class="intro__text" animation="intro-text">
+                and people desiring a shift
+              </p>
+            </div>
+          </div>
+          <div class="intro__overflow">
+            <span class="intro__scroll" animation="intro-text">(Scroll)</span>
+          </div>
+        </section>
+
         <section class="section">
           <div class="section__heading-container">
             <h3 class="section__heading" animation="text">concept</h3>
@@ -223,9 +246,9 @@
         </div>
 
         <section class="section">
-          <h1 class="section__title">TEAM</h1>
+          <h1 class="section__title" animation="title-scroll">TEAM</h1>
           <div class="section__heading-container">
-            <h3 class="section__heading" animation="heading">*</h3>
+            <h3 class="section__heading" animation="text">*</h3>
           </div>
           <div class="section__progress">
             <div class="section__progress-bar progress-bar progress-bar--light">
@@ -286,7 +309,7 @@
               data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193630/IMG_6970-720x720.jpg.webp"
             >
               <div class="perfil__left">
-                <h3 class="perfil__name">JIYU PARK</h3>
+                <h3 class="perfil__name" animation="text">JIYU PARK</h3>
               </div>
               <div class="perfil__right">
                 <span class="perfil__country" animation="text">
@@ -321,7 +344,7 @@
               data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193649/IMG_7015-720x720.jpg.webp"
             >
               <div class="perfil__left">
-                <h3 class="perfil__name">MIKA HIRATA</h3>
+                <h3 class="perfil__name" animation="text">MIKA HIRATA</h3>
               </div>
               <div class="perfil__right">
                 <span class="perfil__country" animation="text">@CANADA</span>
@@ -352,7 +375,7 @@
               shell-button-target
             >
               <div class="perfil__left">
-                <h3 class="perfil__name">GIULIA PRINCIPE</h3>
+                <h3 class="perfil__name" animation="text">GIULIA PRINCIPE</h3>
               </div>
               <div class="perfil__right">
                 <span class="perfil__country" animation="text">
@@ -432,7 +455,7 @@
               shell-button-target
             >
               <div class="perfil__left">
-                <h3 class="perfil__name">SPIN</h3>
+                <h3 class="perfil__name" animation="text">SPIN</h3>
               </div>
               <div class="perfil__right">
                 <span class="perfil__country" animation="text">
@@ -512,7 +535,7 @@
               shell-button-target
             >
               <div class="perfil__left">
-                <h3 class="perfil__name">TOMOKO OZAWA</h3>
+                <h3 class="perfil__name" animation="text">TOMOKO OZAWA</h3>
               </div>
               <div class="perfil__right">
                 <span class="perfil__country" animation="text">
@@ -720,9 +743,9 @@
         </section>
 
         <section class="section">
-          <h1 class="section__title">JOIN US</h1>
+          <h1 class="section__title" animation="title-scroll">JOIN US</h1>
           <div class="section__heading-container">
-            <h3 class="section__heading" animation="heading">*</h3>
+            <h3 class="section__heading" animation="text">*</h3>
           </div>
           <div class="section__progress">
             <div class="section__progress-bar progress-bar progress-bar--light">
@@ -743,18 +766,24 @@
           <div class="join-us">
             <div class="join-us__left">
               <ul class="join-us__list">
-                <li>Producer</li>
-                <li>Director</li>
-                <li>Researcher</li>
-                <li>Web Designer</li>
-                <li>3D/ Visual Artist</li>
-                <li>Videographer</li>
-                <li>Food Designer</li>
+                <li animation="text">Producer</li>
+                <li animation="text">Director</li>
+                <li animation="text">Researcher</li>
+                <li animation="text">Web Designer</li>
+                <li animation="text">3D/ Visual Artist</li>
+                <li animation="text">Videographer</li>
+                <li animation="text">Food Designer</li>
               </ul>
             </div>
             <div class="join-us__right">
-              <p class="join-us__text">The Shift would like to create new projects with people all over the world. You can work remotely from anywhere in the world. We are happy to discuss about your hours and salaries based on your skills and experiences. If you are interested in our works, please send a portfolio and CV from below.</p>
-              <div class="join-us__button">
+              <p class="join-us__text" animation="text">
+                The Shift would like to create new projects with people all over
+                the world. You can work remotely from anywhere in the world. We
+                are happy to discuss about your hours and salaries based on your
+                skills and experiences. If you are interested in our works,
+                please send a portfolio and CV from below.
+              </p>
+              <div class="join-us__button" animation="text">
                 <span>ENTRY</span>
                 <button class="arrow-button arrow-button--dark">
                   <ion-icon
@@ -768,9 +797,9 @@
         </section>
 
         <section class="section">
-          <h1 class="section__title">PROFILE</h1>
+          <h1 class="section__title" animation="title-scroll">PROFILE</h1>
           <div class="section__heading-container">
-            <h3 class="section__heading" animation="heading">*</h3>
+            <h3 class="section__heading" animation="text">*</h3>
           </div>
           <div class="section__progress">
             <div class="section__progress-bar progress-bar progress-bar--light">
@@ -791,35 +820,61 @@
           <div class="profile">
             <div class="profile__column">
               <div class="profile__item">
-                <h3 class="profile__title">COMPANY NAME</h3>
-                <p class="profile__text">The Shift inc.</p>
+                <h3 class="profile__title" animation="text">COMPANY NAME</h3>
+                <p class="profile__text" animation="text">The Shift inc.</p>
               </div>
               <div class="profile__item">
-                <h3 class="profile__title">OFFICE</h3>
-                <p class="profile__text">zaHOUSE 5F, 1-34-17, Ebisunishi, Shibuya-ku, Tokyo, 150-0021, JAPAN <a href="https://goo.gl/maps/emb7t1CKy6FCmkoA7" target="_blank" rel="noopener">MAP</a> </p>
-                <p class="profile__text">※ We are based in Tokyo and work remotely around the world.</p>
+                <h3 class="profile__title" animation="text">OFFICE</h3>
+                <p class="profile__text" animation="text">
+                  zaHOUSE 5F, 1-34-17, Ebisunishi, Shibuya-ku, Tokyo, 150-0021,
+                  JAPAN
+                  <a
+                    href="https://goo.gl/maps/emb7t1CKy6FCmkoA7"
+                    target="_blank"
+                    rel="noopener"
+                    >MAP</a
+                  >
+                </p>
+                <p class="profile__text" animation="text">
+                  ※ We are based in Tokyo and work remotely around the world.
+                </p>
               </div>
             </div>
 
             <div class="profile__column">
               <div class="profile__item">
-                <h3 class="profile__title">REPRESENTATIVE DIRECTORS</h3>
-                <p class="profile__text">Toshiyuki Hashimoto</p>
+                <h3 class="profile__title" animation="text">
+                  REPRESENTATIVE DIRECTORS
+                </h3>
+                <p class="profile__text" animation="text">
+                  Toshiyuki Hashimoto
+                </p>
               </div>
               <div class="profile__item">
-                <h3 class="profile__title">FIELDS OF ACTIVITIES</h3>
-                <p class="profile__text">Produce, Direction, Art Direction/Design, Creative Consulting/Management, Interactive Design</p>
+                <h3 class="profile__title" animation="text">
+                  FIELDS OF ACTIVITIES
+                </h3>
+                <p class="profile__text" animation="text">
+                  Produce, Direction, Art Direction/Design, Creative
+                  Consulting/Management, Interactive Design
+                </p>
               </div>
             </div>
 
             <div class="profile__column">
               <div class="profile__item">
-                <h3 class="profile__title">CAPITAL</h3>
-                <p class="profile__text">8.000.000 Yen</p>
+                <h3 class="profile__title" animation="text">CAPITAL</h3>
+                <p class="profile__text" animation="text">8.000.000 Yen</p>
               </div>
               <div class="profile__item">
-                <h3 class="profile__title">BUSINESS PARTNERS</h3>
-                <p class="profile__text">Heremes Japon, Tokyu Corporation, Japan Airlines Co., Ltd., NISSAN MOTOR CO.,LTD., Loftwork Inc., NHK Promotion Inc., 2121 DESIGN SIGHT, Kyoto University of the Arts, Ltd.</p>
+                <h3 class="profile__title" animation="text">
+                  BUSINESS PARTNERS
+                </h3>
+                <p class="profile__text" animation="text">
+                  Heremes Japon, Tokyu Corporation, Japan Airlines Co., Ltd.,
+                  NISSAN MOTOR CO.,LTD., Loftwork Inc., NHK Promotion Inc., 2121
+                  DESIGN SIGHT, Kyoto University of the Arts, Ltd.
+                </p>
               </div>
             </div>
           </div>
@@ -828,7 +883,12 @@
         <section class="section">
           <h1 class="section__title" style="display: none">PROFILE</h1>
           <div class="section__heading-container">
-            <h3 class="section__heading section__heading--secondary" animation="heading">AWARDS</h3>
+            <h3
+              class="section__heading section__heading--secondary"
+              animation="text"
+            >
+              AWARDS
+            </h3>
           </div>
           <div class="section__progress">
             <div class="section__progress-bar progress-bar progress-bar--light">
@@ -845,14 +905,22 @@
               </p>
             </div>
           </div>
-          
-          <p class="awards">ADFEST, AD STARS, AWWWARDS, GOOD DESIGN AWARD, JAPAN MEDIA ART FESTIVAL, SPIKES ASIA, WEBBY AWARDS, and more</p>
+
+          <p class="awards" animation="text">
+            ADFEST, AD STARS, AWWWARDS, GOOD DESIGN AWARD, JAPAN MEDIA ART
+            FESTIVAL, SPIKES ASIA, WEBBY AWARDS, and more
+          </p>
         </section>
 
         <section class="section">
           <h1 class="section__title" style="display: none">PROFILE</h1>
           <div class="section__heading-container">
-            <h3 class="section__heading section__heading--secondary" animation="heading">PARTNERS</h3>
+            <h3
+              class="section__heading section__heading--secondary"
+              animation="text"
+            >
+              PARTNERS
+            </h3>
           </div>
           <div class="section__progress">
             <div class="section__progress-bar progress-bar progress-bar--light">
@@ -869,15 +937,17 @@
               </p>
             </div>
           </div>
-          
+
           <div class="partners">
             <div class="partners__item">
-              <h3 class="partners__title">aircord</h3>
-              <p class="partners__button">Creative Technology Company</p>
+              <h3 class="partners__title" animation="text">aircord</h3>
+              <p class="partners__button" animation="text">
+                Creative Technology Company
+              </p>
             </div>
             <div class="partners__item">
-              <h3 class="partners__title">SHIFT LINK</h3>
-              <p class="partners__button">Hub Systems</p>
+              <h3 class="partners__title" animation="text">SHIFT LINK</h3>
+              <p class="partners__button" animation="text">Hub Systems</p>
             </div>
           </div>
         </section>
@@ -899,12 +969,12 @@
     <script type="module" src="./about.ts"></script>
     <script type="module" src="/src/main.ts"></script>
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
