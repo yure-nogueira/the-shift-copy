@@ -94,6 +94,10 @@
     margin-left: 2rem;
   }
 
+  &__overflow {
+    overflow: hidden;
+  }
+
   &__touch {
     text-transform: uppercase;
     font-size: 12rem;

@@ -7,10 +7,8 @@ import { DOM, SCROLL_POSITION } from "./constants";
 gsap.registerPlugin(ScrollTrigger);
 
 const titles = gsap.utils.toArray(`[animation=${DOM.title}]`);
-const titlesScroll = gsap.utils.toArray(`[animation=${DOM.titleScroll}]`);
-
 const title = new SplitType(titles as HTMLElement[]);
-const titleScroll = new SplitType(titlesScroll as HTMLElement[]);
+const titlesScroll = gsap.utils.toArray(`[animation=${DOM.titleScroll}]`);
 
 gsap.from(title.chars, {
   opacity: 0,
@@ -20,6 +18,7 @@ gsap.from(title.chars, {
 });
 
 titlesScroll.forEach((title) => {
+  const titleScroll = new SplitType(title as HTMLElement[]);
   gsap.from(titleScroll.chars, {
     opacity: 0,
     y: 100,
@@ -30,6 +29,7 @@ titlesScroll.forEach((title) => {
       start: SCROLL_POSITION.start,
       end: SCROLL_POSITION.end,
       toggleActions: "play none none reverse",
+      // markers: true,
     },
   });
 });
