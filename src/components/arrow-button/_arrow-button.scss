@@ -23,4 +23,13 @@
       transform: rotate(-90deg);
     }
   }
+
+  &--dark {
+    background-color: var(--color-dark);
+
+    .arrow-button__icon {
+      color: var(--color-light);
+    }
+  
+  }
 }
