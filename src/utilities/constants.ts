@@ -10,6 +10,9 @@ export const DOM = {
   researchDescriptions: "research-description",
   researchImages: "research-image",
   researchTitle: "research-title",
+
+  // about page
+  aboutTitle: "about-title",
 };
 
 export const SCROLL_POSITION = {
