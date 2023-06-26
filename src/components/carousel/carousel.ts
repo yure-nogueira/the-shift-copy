@@ -11,7 +11,6 @@ forward.forEach((carousel) => {
     `[animation=${DOM.carouselForwardSpan}]`,
     carousel as HTMLElement
   );
-  console.log(carouselSpan);
   horizontalLoop(carouselSpan, {
     repeat: -1,
   });
@@ -22,7 +21,6 @@ backward.forEach((carousel) => {
     `[animation=${DOM.carouselBackwardSpan}]`,
     carousel as HTMLElement
   );
-  console.log(carouselSpan);
   horizontalLoop(carouselSpan, {
     reversed: true,
     repeat: -1,
