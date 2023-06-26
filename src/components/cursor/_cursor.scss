@@ -1,6 +1,10 @@
 .cursor {
   position: relative;
 
+  @include breakpoint("sm") {
+    display: none;
+  }
+
   &__circle {
     height: 2.5rem;
     width: 2.5rem;

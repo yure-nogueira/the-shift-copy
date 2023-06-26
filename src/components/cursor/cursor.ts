@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { HOVER_TYPES } from "./../../utilities/constants";
 
 (() => {
+  if (window.innerWidth <= 576) return;
+
   const cursor = document.querySelector(".cursor__circle");
   const container = document.querySelector(".cursor__text-container");
   const span = document.querySelector(".cursor__span");
