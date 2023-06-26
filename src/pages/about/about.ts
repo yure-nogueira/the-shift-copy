@@ -12,6 +12,7 @@ import "../../components/carousel/carousel";
 
 // utilities
 import "./../../utilities/animation-text";
+import "./../../utilities/animation-title";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
