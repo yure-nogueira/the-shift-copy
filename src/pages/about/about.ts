@@ -22,9 +22,11 @@ import { DOM } from "./../../utilities/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const titles = document.querySelectorAll(`[animation=${DOM.aboutTitle}]`);
+(() => {
+  const titles = document.querySelectorAll(`[animation=${DOM.aboutTitle}]`);
 
-if (titles) {
+  if (!titles) return;
+
   titles.forEach((title) => {
     gsap.to(title, {
       y: -30,
@@ -34,4 +36,4 @@ if (titles) {
       },
     });
   });
-}
+})();
