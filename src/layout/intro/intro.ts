@@ -2,9 +2,10 @@ import { gsap } from "gsap";
 
 import { DOM } from "./../../utilities/constants";
 
-const texts = document.querySelectorAll(`[animation=${DOM.introText}]`);
+(() => {
+  const texts = document.querySelectorAll(`[animation=${DOM.introText}]`);
 
-if (texts) {
+  if (!texts) return;
   texts.forEach((text) => {
     gsap.from(text, {
       yPercent: 100,
@@ -12,4 +13,4 @@ if (texts) {
       ease: "power4.out",
     });
   });
-}
+})();

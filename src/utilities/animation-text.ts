@@ -5,9 +5,11 @@ import { DOM, SCROLL_POSITION } from "./constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const texts = document.querySelectorAll(`[animation=${DOM.text}]`);
+(() => {
+  const texts = document.querySelectorAll(`[animation=${DOM.text}]`);
 
-if (texts) {
+  if (!texts) return;
+
   texts.forEach((text) => {
     gsap.from(text, {
       opacity: 0,
@@ -21,4 +23,4 @@ if (texts) {
       },
     });
   });
-}
+})();
