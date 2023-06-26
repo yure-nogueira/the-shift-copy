@@ -256,13 +256,37 @@
 
         <div class="footer__section">
           <div class="footer__based">
-            <button
-              class="footer__placeholder"
-              animation="text"
-              data-cursor="hover"
-            >
-              JA
-            </button>
+            <div class="footer__shell-container" shell-button-target>
+              <button
+                class="shell-button shell-button--inverted"
+                type="button"
+                data-cursor="hover"
+                animation="shell-button"
+                shell-button-toggles
+              >
+                <div class="shell-button__label-container">
+                  <span
+                    class="shell-button__label"
+                    animation="shell-button-default-label"
+                  >
+                    JA
+                  </span>
+                  <span
+                    class="shell-button__label"
+                    animation="shell-button-secondary-label"
+                  >
+                    EN
+                  </span>
+                </div>
+
+                <span
+                  class="shell-button__shell"
+                  animation="shell-button-shell"
+                >
+                </span>
+              </button>
+            </div>
+
             <div class="footer__text-container">
               <p class="footer__text" animation="text">Based in Tokyo</p>
               <p class="footer__text" animation="text">Working worldwide</p>
@@ -302,12 +326,39 @@
               <a href="#" class="footer__link" data-cursor="hover">Behance</a>
             </div>
 
-            <button
-              class="footer__placeholder footer__placeholder--dark"
-              data-cursor="hover"
+            <div
+              class="footer__shell-container footer__shell-container--dark"
+              shell-button-target
             >
-              dark mode
-            </button>
+              <button
+                class="shell-button shell-button--inverted"
+                type="button"
+                data-cursor="hover"
+                animation="shell-button"
+                shell-button-toggles
+              >
+                <div class="shell-button__label-container">
+                  <span
+                    class="shell-button__label"
+                    animation="shell-button-default-label"
+                  >
+                    Light mode
+                  </span>
+                  <span
+                    class="shell-button__label"
+                    animation="shell-button-secondary-label"
+                  >
+                    Dark mode
+                  </span>
+                </div>
+
+                <span
+                  class="shell-button__shell"
+                  animation="shell-button-shell"
+                >
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </footer>

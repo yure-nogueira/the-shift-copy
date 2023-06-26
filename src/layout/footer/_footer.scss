@@ -60,9 +60,9 @@
     }
   }
 
-  &__placeholder {
-    height: 5rem;
-    width: 5rem;
+  &__shell-container {
+    border-radius: 999px;
+    overflow: hidden;
 
     &--dark {
       margin-left: auto;
