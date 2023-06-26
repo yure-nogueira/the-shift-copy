@@ -28,7 +28,7 @@ titles.forEach((title) => {
     y: -30,
     scrollTrigger: {
       trigger: title,
-      scrub: 1,
+      toggleActions: "play none none reverse",
     },
   });
 });

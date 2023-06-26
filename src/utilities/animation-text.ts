@@ -15,7 +15,7 @@ texts.forEach((text) => {
       trigger: text,
       start: SCROLL_POSITION.start,
       end: SCROLL_POSITION.end,
-      scrub: 1,
+      toggleActions: "play none none reverse",
       // markers: true,
     },
   });

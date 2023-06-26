@@ -1,11 +1,12 @@
 // components
 import "./../../components/carousel/carousel";
 import "./../../components/cursor/cursor";
-// import "./../../components/menu/menu";
+import "./../../components/menu/menu";
 import "./../../components/progress-bar/progress-bar";
 import "./../../components/shell-button/shell-button";
 
 // layout
+import "./../../layout/footer/footer";
 import "./../../layout/intro/intro";
 import "./../../layout/section/section";
 
@@ -51,7 +52,7 @@ images.forEach((image) => {
       trigger: image,
       start: SCROLL_POSITION.start,
       end: SCROLL_POSITION.end,
-      scrub: 1,
+      toggleActions: "play none none reverse",
       // markers: true,
     },
   });
@@ -65,7 +66,7 @@ descriptions.forEach((description) => {
       trigger: description,
       start: SCROLL_POSITION.start,
       end: SCROLL_POSITION.end,
-      scrub: 1,
+      toggleActions: "play none none reverse",
       // markers: true,
     },
   });

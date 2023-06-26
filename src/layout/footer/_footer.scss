@@ -34,13 +34,25 @@
   }
 
   &__link {
+    --position-x: 0;
     font-size: 1.5rem;
     text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
 
     &:link,
     &:visited {
       color: var(--color-light);
-      text-decoration: underline !important;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid var(--color-light);
+      transform: translateX(var(--position-x));
     }
   }
 

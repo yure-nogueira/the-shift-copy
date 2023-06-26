@@ -13,6 +13,9 @@ export const DOM = {
   // intro
   introText: "intro-text",
 
+  // footer
+  footerLink: "footer-link",
+
   // research page
   researchDescriptions: "research-description",
   researchImages: "research-image",
