@@ -16,6 +16,7 @@ import "./../../layout/section/section";
 // utilities
 import "./../../utilities/animation-text";
 import "./../../utilities/animation-title";
+import { smoothScroll } from "./../../utilities/gsap/helper-functions/smooth-scroll";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -25,6 +26,10 @@ import { DOM } from "./../../utilities/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {
+  const viewport = document.querySelector(".page-viewport");
+  const container = document.querySelector(".page-container");
+  smoothScroll(container, viewport);
+
   const titles = document.querySelectorAll(`[animation=${DOM.aboutTitle}]`);
 
   if (!titles) return;
