@@ -1,9 +1,6 @@
 .carousel {
   display: flex;
-
-  &--color-light {
-    color: var(--color-light);
-  }
+  color: var(--color-light-always);
 
   @include breakpoint("md") {
     font-size: 4.5rem;

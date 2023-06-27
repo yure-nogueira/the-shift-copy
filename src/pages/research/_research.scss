@@ -127,30 +127,3 @@
     align-self: flex-end;
   }
 }
-
-/*
-.intro {
-  height: 100vh;
-  width: 100%;
-  background: #ffffb3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__card {
-    height: 70%;
-    flex: 30%;
-    border: 5px solid #ec6f6f;
-    background-color: #94fd94;
-    font-size: 7rem;
-    color: var(--color-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__text {
-    z-index: 2;
-  }
-}
-*/

@@ -1,21 +1,25 @@
 .progress-bar {
-  --progress-fill-color: rgba(245, 245, 245, 0.15);
   background-color: transparent;
   height: 1px;
   width: 100%;
   overflow: hidden;
-
-  &--light {
-    --progress-fill-color: var(--color-dark);
-  }
-
-  &--light-grey {
-    --progress-fill-color: var(--color-border-line);
-  }
+  opacity: var(--progress-opacity);
 
   &__fill {
     background-color: var(--progress-fill-color);
     height: 100%;
     width: 100%;
   }
+
+  &--always-dark {
+    opacity: 0.3;
+
+    .progress-bar__fill {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.light-mode .progress-bar--light {
+  --progress-opacity: 0.15;
 }

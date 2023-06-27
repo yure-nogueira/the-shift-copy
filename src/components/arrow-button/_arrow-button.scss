@@ -16,10 +16,10 @@
   }
 
   &--up {
-    background-color: var(--color-light);
+    background-color: var(--color-light-always);
 
     .arrow-button__icon {
-      color: var(--color-dark);
+      color: var(--color-dark-always);
       transform: rotate(-90deg);
     }
   }
@@ -30,6 +30,5 @@
     .arrow-button__icon {
       color: var(--color-light);
     }
-  
   }
 }

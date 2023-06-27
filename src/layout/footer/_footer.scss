@@ -1,4 +1,6 @@
 .footer {
+  background: var(--color-dark-always);
+  color: var(--color-light-always);
   width: 100%;
   padding: 0 5.5rem;
   overflow: hidden;
@@ -42,7 +44,7 @@
 
     &:link,
     &:visited {
-      color: var(--color-light);
+      color: var(--color-light-always);
     }
 
     &::after {
@@ -51,7 +53,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      border-bottom: 1px solid var(--color-light);
+      border-bottom: 1px solid var(--color-light-always);
       transform: translateX(var(--position-x));
     }
   }

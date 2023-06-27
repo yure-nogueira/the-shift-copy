@@ -7,6 +7,7 @@ import "./../../components/perfil/perfil";
 import "./../../components/progress-bar/progress-bar";
 import "./../../components/swiper/swiper";
 import "./../../components/shell-button/shell-button";
+import "./../../components/switch-color-mode/switch-color-mode";
 
 // layout
 import "./../../layout/footer/footer";

@@ -74,13 +74,13 @@
   }
 
   &__carousel {
-    background: var(--color-dark);
+    background: var(--color-dark-always);
     padding: 6rem 5.5rem 18rem;
     overflow-x: hidden;
   }
 
   &__title-carousel {
-    color: var(--color-light);
+    color: var(--color-light-always);
     font-size: 2rem;
     font-weight: 200;
     padding-bottom: 10rem;
@@ -89,7 +89,7 @@
   }
 
   &__subtitle-carousel {
-    color: var(--color-light);
+    color: var(--color-light-always);
     font-size: 1.4rem;
     font-weight: 200;
     padding-bottom: 5rem;
