@@ -89,6 +89,7 @@
   &__carousel {
     background: var(--color-dark);
     padding: 6rem 5.5rem 18rem;
+    overflow-x: hidden;
   }
 
   &__title-carousel {
@@ -131,12 +132,12 @@
     flex: 1;
     padding: 0 2.5rem;
   }
-  
+
   &__list {
     font-size: 2.5rem;
     font-weight: 300;
   }
-  
+
   &__right {
     flex: 1;
     display: flex;
@@ -148,12 +149,12 @@
       margin-top: 4rem;
     }
   }
-  
+
   &__text {
     font-size: 1.4rem;
     font-weight: 200;
   }
-  
+
   &__button {
     display: flex;
     align-items: center;
@@ -249,5 +250,3 @@
     font-weight: 200;
   }
 }
-
-
