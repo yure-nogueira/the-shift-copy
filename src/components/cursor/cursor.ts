@@ -51,7 +51,6 @@ import { HOVER_TYPES } from "./../../utilities/constants";
         element.addEventListener("mouseenter", () => {
           gsap.to(cursor, {
             scale: 0.2,
-            duration: 0.3,
           });
 
           if (type === "image") {
@@ -79,7 +78,6 @@ import { HOVER_TYPES } from "./../../utilities/constants";
         element.addEventListener("mouseleave", () => {
           gsap.to(cursor, {
             scale: 1,
-            duration: 1,
           });
 
           if (type === "image") {
@@ -117,7 +115,6 @@ import { HOVER_TYPES } from "./../../utilities/constants";
         element.addEventListener("mouseenter", () => {
           gsap.to(cursor, {
             scale: 4,
-            duration: 0.3,
           });
 
           (span as HTMLSpanElement).textContent =
@@ -140,7 +137,6 @@ import { HOVER_TYPES } from "./../../utilities/constants";
         element.addEventListener("mouseleave", () => {
           gsap.to(cursor, {
             scale: 1,
-            duration: 0.3,
           });
 
           if (type === "drag") document.body.style.cursor = "default";
@@ -167,12 +163,10 @@ import { HOVER_TYPES } from "./../../utilities/constants";
 
             gsap.to(cursor, {
               scale: 2,
-              duration: 0.3,
             });
 
             gsap.to(container, {
               scale: 2,
-              duration: 0.5,
             });
           });
 
@@ -181,12 +175,10 @@ import { HOVER_TYPES } from "./../../utilities/constants";
 
             gsap.to(cursor, {
               scale: 4,
-              duration: 0.3,
             });
 
             gsap.to(container, {
               scale: 1,
-              duration: 0.5,
             });
           });
         }
