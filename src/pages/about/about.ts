@@ -5,9 +5,11 @@ import "./../../components/logo/logo";
 // import "./../../components/menu/menu";
 import "./../../components/perfil/perfil";
 import "./../../components/progress-bar/progress-bar";
-// import "./../../components/swiper/swiper";
+import "./../../components/swiper/swiper";
+import "./../../components/shell-button/shell-button"
 
 // layout
+import "./../../layout/footer/footer"
 import "./../../layout/intro/intro";
 import "./../../layout/section/section";
 

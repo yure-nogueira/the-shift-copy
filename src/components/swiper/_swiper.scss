@@ -3,8 +3,6 @@
   align-items: center;
   width: 100% !important;
   overflow: hidden;
-  //height: 100vh;
-  //transform: translateX(-15%) rotateZ(15deg) !important;
   transform-origin: center !important;
 
   &--absolute {
@@ -31,18 +29,6 @@
       margin-right: 10.5rem !important;
     }
   }
-
-  // @for $i from 1 through 10 {
-  //   @if $i % 2 == 1 {
-  //     &__slide[data-slide-#{$i}] {
-  //       //margin-top: 35px;
-  //     }
-  //   } @else {
-  //     &__slide[data-slide-#{$i}] {
-  //       //margin-top: -35px;
-  //     }
-  //   }
-  // }
 
   &__shades {
     display: none;
