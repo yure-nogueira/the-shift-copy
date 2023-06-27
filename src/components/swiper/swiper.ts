@@ -1,13 +1,12 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 
-console.log(Swiper);
-const slides = document.querySelectorAll('.swiper__slide');
+const slides = document.querySelectorAll(".swiper__slide");
 
 /**
  ** swiper
  **/
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   slidesPerView: 1.5,
   freeMode: true,
   loop: true,
@@ -17,9 +16,9 @@ const swiper = new Swiper('.swiper', {
   grabCursor: true,
   breakpoints: {
     1240: {
-      slidesPerView: 2.5
+      slidesPerView: 2.5,
     },
-  }
+  },
 });
 
 /**

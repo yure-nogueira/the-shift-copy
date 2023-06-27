@@ -9,6 +9,58 @@
   </head>
   <body>
     <div class="page-container">
+      <header class="header" animation="header">
+        <h1>
+          <a class="header__title" href="/index.html" data-cursor="hover">
+            The Shift
+          </a>
+        </h1>
+
+        <nav class="header__navigation" animation="menu">
+          <button
+            class="header__menu-button"
+            animation="menu-button"
+            type="button"
+          >
+            Menu
+            <span
+              class="header__menu-button-shell"
+              animation="menu-button-shell"
+            >
+            </span>
+          </button>
+
+          <ul class="header__links" animation="menu-links">
+            <li class="header__link header__link--active">
+              <a href="/index.html" animation="menu-link" data-cursor="hover">
+                Home
+              </a>
+            </li>
+            <li class="header__link">
+              <a href="#" animation="menu-link" data-cursor="hover">Project</a>
+            </li>
+            <li class="header__link">
+              <a
+                href="/src/pages/research/research.html"
+                animation="menu-link"
+                data-cursor="hover"
+              >
+                Research
+              </a>
+            </li>
+            <li class="header__link">
+              <a
+                href="/src/pages/about/about.html"
+                animation="menu-link"
+                data-cursor="hover"
+              >
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <main class="main about">
         <section class="intro">
           <div class="intro__container">
@@ -39,7 +91,7 @@
             <h3 class="section__heading" animation="text">concept</h3>
           </div>
           <div class="section__progress">
-            <div class="section__progress-bar progress-bar progress-bar--light">
+            <div class="section__progress-bar progress-bar">
               <div class="progress-bar__fill" animation="progress-bar">
                 &nbsp;
               </div>
@@ -257,7 +309,7 @@
             <h3 class="section__heading" animation="text">*</h3>
           </div>
           <div class="section__progress">
-            <div class="section__progress-bar progress-bar progress-bar--light">
+            <div class="section__progress-bar progress-bar">
               <div class="progress-bar__fill" animation="progress-bar">
                 &nbsp;
               </div>
@@ -791,7 +843,7 @@
               </p>
               <div class="join-us__button" animation="text">
                 <span>ENTRY</span>
-                <button class="arrow-button arrow-button--dark">
+                <button class="arrow-button">
                   <ion-icon
                     class="arrow-button__icon"
                     name="arrow-forward-outline"
@@ -965,7 +1017,11 @@
           <p class="footer__text footer__text--margin-bottom" animation="text">
             and fields
           </p>
-          <a href="#" class="footer__link" animation="footer-link" data-cursor="hover"
+          <a
+            href="#"
+            class="footer__link"
+            animation="footer-link"
+            data-cursor="hover"
             >About us</a
           >
         </div>

@@ -2,14 +2,14 @@
 import "../../components/carousel/carousel";
 import "./../../components/cursor/cursor";
 import "./../../components/logo/logo";
-// import "./../../components/menu/menu";
+import "./../../components/menu/menu";
 import "./../../components/perfil/perfil";
 import "./../../components/progress-bar/progress-bar";
 import "./../../components/swiper/swiper";
-import "./../../components/shell-button/shell-button"
+import "./../../components/shell-button/shell-button";
 
 // layout
-import "./../../layout/footer/footer"
+import "./../../layout/footer/footer";
 import "./../../layout/intro/intro";
 import "./../../layout/section/section";
 
@@ -34,7 +34,7 @@ gsap.registerPlugin(ScrollTrigger);
       y: -30,
       scrollTrigger: {
         trigger: title,
-        toggleActions: "play none none reverse",
+        scrub: 1,
       },
     });
   });
