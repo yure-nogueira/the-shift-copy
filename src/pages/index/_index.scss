@@ -1,0 +1,56 @@
+.home {
+  &__what {
+    background: var(--color-dark-always);
+    color: var(--color-light-always);
+  }
+
+  &__text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  &__overflow {
+    overflow: hidden;
+  }
+
+  &__text {
+    font-size: 4rem;
+    text-align: center;
+
+    @include breakpoint("lg") {
+      font-size: 3rem;
+    }
+
+    @include breakpoint("md") {
+      font-size: 2.8rem;
+    }
+
+    @include breakpoint("sm") {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading-top {
+    margin: 3rem 0 0;
+  }
+
+  &__heading-bottom {
+    margin: 0;
+  }
+
+  &__project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 3rem;
+  }
+}

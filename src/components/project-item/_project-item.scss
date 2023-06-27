@@ -1,0 +1,65 @@
+.project-item {
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.5s;
+
+  @include breakpoint("lg") {
+    padding: 4rem 9rem;
+  }
+
+  @include breakpoint("md") {
+    padding: 2.5rem 7rem;
+  }
+
+  @include breakpoint("sm") {
+    padding: 2rem 2rem;
+    justify-content: center;
+  }
+
+  &:hover {
+    padding-left: 3rem;
+
+    @include breakpoint("sm") {
+      padding-left: 2rem;
+    }
+  }
+
+  &__number {
+    font-size: 1.3rem;
+    margin: 1rem 2rem 0 0;
+    z-index: 2;
+
+    @include breakpoint("sm") {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 2;
+
+    @include breakpoint("sm") {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include breakpoint("lg") {
+      font-size: 6.2rem;
+    }
+
+    @include breakpoint("md") {
+      font-size: 4.6rem;
+    }
+  }
+}

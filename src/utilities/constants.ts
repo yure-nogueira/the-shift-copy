@@ -1,20 +1,20 @@
 export const DOM = {
+  aboutUs: "about-us",
   carouselForward: "carousel-forward",
   carouselForwardSpan: "carousel-forward-span",
   carouselBackward: "carousel-backward",
   carouselBackwardSpan: "carousel-backward-span",
   header: "header",
+  link: "link",
   progressBar: "progress-bar",
   progressBarLast: "progress-bar-last",
+  projectItem: "project-item",
   text: "text",
   title: "title",
   titleScroll: "title-scroll",
 
   // intro
   introText: "intro-text",
-
-  // footer
-  footerLink: "footer-link",
 
   // research page
   researchDescriptions: "research-description",

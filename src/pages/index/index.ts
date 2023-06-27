@@ -1,13 +1,17 @@
-//Components
-import'./../../components/carousel/carousel'
-import './../../components/forward-slider/forward-slider';
-import './../../components/menu/menu';
+// components
+import "./../../components/about-us/about-us";
+import "./../../components/carousel/carousel";
+import "./../../components/cursor/cursor";
+import "./../../components/forward-slider/forward-slider";
+import "./../../components/link/link";
+import "./../../components/menu/menu";
 import "./../../components/progress-bar/progress-bar";
+import "./../../components/shell-button/shell-button";
+import "./../../components/switch-color-mode/switch-color-mode";
 
-//Layout
-import "./../../layout/footer/footer"
+// layout
 import "./../../layout/section/section";
 
 // utilities
 import "./../../utilities/animation-text";
-import "./../../utilities/animation-title";
+// import "./../../utilities/animation-title";

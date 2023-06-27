@@ -11,7 +11,7 @@
     <div class="page-container">
       <header class="header" animation="header">
         <h1>
-          <a class="header__title" href="#"> The Shift </a>
+          <a class="header__title" href="#" data-cursor="hover"> The Shift </a>
         </h1>
 
         <nav class="header__navigation" animation="menu">
@@ -30,18 +30,26 @@
 
           <ul class="header__links" animation="menu-links">
             <li class="header__link header__link--active">
-              <a href="#" animation="menu-link">Home</a>
+              <a href="#" animation="menu-link" data-cursor="hover">Home</a>
             </li>
             <li class="header__link">
-              <a href="#" animation="menu-link">Project</a>
+              <a href="#" animation="menu-link" data-cursor="hover">Project</a>
             </li>
             <li class="header__link">
-              <a href="/src/pages/research/research.html" animation="menu-link">
+              <a
+                href="/src/pages/research/research.html"
+                animation="menu-link"
+                data-cursor="hover"
+              >
                 Research
               </a>
             </li>
             <li class="header__link">
-              <a href="src/pages/about/about.html" animation="menu-link">
+              <a
+                href="src/pages/about/about.html"
+                animation="menu-link"
+                data-cursor="hover"
+              >
                 About
               </a>
             </li>
@@ -49,143 +57,289 @@
         </nav>
       </header>
 
-      <main class="main">
+      <main class="main home">
+        <!-- INTRO -->
+        <section class="intro">
+          <div class="forward-slider">
+            <p class="forward-slider__title">Projects</p>
 
-
-        <div class="forward-slider">
-          <p class="forward-slider__title">Projects</p>
-
-          <div
-            class="forward-slider__container"
-            animation="forward-slider-container"
-          >
             <div
-              class="forward-slider__slides"
-              animation="forward-slider-slides"
+              class="forward-slider__container"
+              animation="forward-slider-container"
             >
               <div
-                class="forward-slider__slide"
-                animation="forward-slider-slide"
+                class="forward-slider__slides"
+                animation="forward-slider-slides"
               >
-                <video autoplay muted loop>
-                  <source
-                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2022/07/22200106/rainbow.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <div
-                class="forward-slider__slide"
-                animation="forward-slider-slide"
-              >
-                <video autoplay muted loop>
-                  <source
-                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/02/09190304/Vid-1.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <div
-                class="forward-slider__slide"
-                animation="forward-slider-slide"
-              >
-                <video autoplay muted loop>
-                  <source
-                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2022/05/19141516/Untitled.mp4"
-                  />
-                </video>
-              </div>
-              <div
-                class="forward-slider__slide"
-                animation="forward-slider-slide"
-              >
-                <video autoplay muted loop>
-                  <source
-                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2019/07/06141434/JSM.mp4"
-                  />
-                </video>
-              </div>
-              <div
-                class="forward-slider__slide"
-                animation="forward-slider-slide"
-              >
-                <video autoplay muted loop>
-                  <source
-                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2017/07/24102412/kolor.mp4"
-                  />
-                </video>
-              </div>
-              <div
-                class="forward-slider__slide"
-                animation="forward-slider-slide"
-              >
-                <video autoplay muted loop>
-                  <source
-                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2019/07/06141426/coca-cola.mp4"
-                  />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="forward-slider__counter">
-            <span>(&nbsp;</span>
-            <div class="forward-slider__number-container">
-              <div class="forward-slider__number-position">00</div>
-              <div class="forward-slider__varying-numbers">
                 <div
-                  class="forward-slider__number"
-                  animation="forward-slider-number"
+                  class="forward-slider__slide"
+                  animation="forward-slider-slide"
                 >
-                  01
+                  <video autoplay muted loop>
+                    <source
+                      src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2022/07/22200106/rainbow.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
                 <div
-                  class="forward-slider__number"
-                  animation="forward-slider-number"
+                  class="forward-slider__slide"
+                  animation="forward-slider-slide"
                 >
-                  02
+                  <video autoplay muted loop>
+                    <source
+                      src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/02/09190304/Vid-1.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
                 <div
-                  class="forward-slider__number"
-                  animation="forward-slider-number"
+                  class="forward-slider__slide"
+                  animation="forward-slider-slide"
                 >
-                  03
+                  <video autoplay muted loop>
+                    <source
+                      src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2022/05/19141516/Untitled.mp4"
+                    />
+                  </video>
                 </div>
                 <div
-                  class="forward-slider__number"
-                  animation="forward-slider-number"
+                  class="forward-slider__slide"
+                  animation="forward-slider-slide"
                 >
-                  04
+                  <video autoplay muted loop>
+                    <source
+                      src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2019/07/06141434/JSM.mp4"
+                    />
+                  </video>
                 </div>
                 <div
-                  class="forward-slider__number"
-                  animation="forward-slider-number"
+                  class="forward-slider__slide"
+                  animation="forward-slider-slide"
                 >
-                  05
+                  <video autoplay muted loop>
+                    <source
+                      src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2017/07/24102412/kolor.mp4"
+                    />
+                  </video>
                 </div>
                 <div
-                  class="forward-slider__number"
-                  animation="forward-slider-number"
+                  class="forward-slider__slide"
+                  animation="forward-slider-slide"
                 >
-                  06
+                  <video autoplay muted loop>
+                    <source
+                      src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2019/07/06141426/coca-cola.mp4"
+                    />
+                  </video>
                 </div>
               </div>
             </div>
 
-            <div>/06</div>
-            <span>&nbsp;)</span>
+            <div class="forward-slider__counter">
+              <span>(&nbsp;</span>
+              <div class="forward-slider__number-container">
+                <div class="forward-slider__number-position">00</div>
+                <div class="forward-slider__varying-numbers">
+                  <div
+                    class="forward-slider__number"
+                    animation="forward-slider-number"
+                  >
+                    01
+                  </div>
+                  <div
+                    class="forward-slider__number"
+                    animation="forward-slider-number"
+                  >
+                    02
+                  </div>
+                  <div
+                    class="forward-slider__number"
+                    animation="forward-slider-number"
+                  >
+                    03
+                  </div>
+                  <div
+                    class="forward-slider__number"
+                    animation="forward-slider-number"
+                  >
+                    04
+                  </div>
+                  <div
+                    class="forward-slider__number"
+                    animation="forward-slider-number"
+                  >
+                    05
+                  </div>
+                  <div
+                    class="forward-slider__number"
+                    animation="forward-slider-number"
+                  >
+                    06
+                  </div>
+                </div>
+              </div>
+
+              <div>/06</div>
+              <span>&nbsp;)</span>
+            </div>
+
+            <button
+              class="arrow-button forward-slider__button"
+              animation="forward-slider-button"
+            >
+              <ion-icon
+                class="arrow-button__icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </section>
+
+        <!-- WHAT WE DO -->
+        <section class="section home__what">
+          <div class="section__heading-container">
+            <h3 class="section__heading" animation="text">What we do</h3>
+          </div>
+          <div class="section__progress">
+            <div
+              class="section__progress-bar progress-bar progress-bar--always-dark"
+            >
+              <div class="progress-bar__fill" animation="progress-bar">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+          <div class="home__text-container">
+            <div class="home__overflow">
+              <p class="home__text" animation="text">
+                The Shift is a creative collective based in Tokyo.
+              </p>
+            </div>
+            <div class="home__overflow">
+              <p class="home__text" animation="text">
+                We provide new perspectives and solutions.
+              </p>
+            </div>
+          </div>
+          <div class="home__about-us">
+            <a
+              class="about-us"
+              href="/src/pages/about/about.html"
+              animation="about-us"
+              data-cursor="hover"
+            >
+              <span class="about-us__span"> About us </span>
+            </a>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section">
+          <div class="section__heading-container">
+            <h3 class="section__heading home__heading-top" animation="text">
+              Featured project
+            </h3>
+          </div>
+          <div class="section__heading-container">
+            <h3 class="section__heading home__heading-bottom" animation="text">
+              and research
+            </h3>
           </div>
 
-          <button
-            class="arrow-button forward-slider__button"
-            animation="forward-slider-button"
-          >
-            <ion-icon
-              class="arrow-button__icon"
-              name="arrow-forward-outline"
-            ></ion-icon>
-          </button>
-        </div>
+          <div class="home__project-link">
+            <a href="#" class="link" data-cursor="hover" animation="link">
+              View all project
+            </a>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-bar__fill" animation="progress-bar">
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="home__project-list">
+            <a
+              class="project-item"
+              href="#"
+              data-cursor="image"
+              data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193607/google-earth-view-1684-720x720.jpg.webp"
+              animation="project-item"
+            >
+              <span class="project-item__number">(01)</span>
+              <div class="project-item__container">
+                <h1 class="project-item__name">Shift link</h1>
+              </div>
+            </a>
+
+            <div class="progress-bar progress-bar--light">
+              <div class="progress-bar__fill" animation="progress-bar">
+                &nbsp;
+              </div>
+            </div>
+
+            <a
+              class="project-item"
+              href="#"
+              data-cursor="image"
+              data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193630/IMG_6970-720x720.jpg.webp"
+              animation="project-item"
+            >
+              <span class="project-item__number">(02)</span>
+              <div class="project-item__container">
+                <h1 class="project-item__name">Ipsa aqua</h1>
+                <h1 class="project-item__name">play art</h1>
+              </div>
+            </a>
+
+            <div class="progress-bar progress-bar--light">
+              <div class="progress-bar__fill" animation="progress-bar">
+                &nbsp;
+              </div>
+            </div>
+
+            <a
+              class="project-item"
+              href="#"
+              data-cursor="image"
+              data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193649/IMG_7015-720x720.jpg.webp"
+              animation="project-item"
+            >
+              <span class="project-item__number">(03)</span>
+              <div class="project-item__container">
+                <h1 class="project-item__name">Level of</h1>
+                <h1 class="project-item__name">distance</h1>
+              </div>
+            </a>
+
+            <div class="progress-bar progress-bar--light">
+              <div class="progress-bar__fill" animation="progress-bar">
+                &nbsp;
+              </div>
+            </div>
+
+            <a
+              class="project-item"
+              href="#"
+              data-cursor="image"
+              data-image="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193558/google-earth-view-1070-720x720.jpg.webp"
+              animation="project-item"
+            >
+              <span class="project-item__number">(04)</span>
+              <div class="project-item__container">
+                <h1 class="project-item__name">Kolor Paris</h1>
+                <h1 class="project-item__name">Collection</h1>
+              </div>
+            </a>
+
+            <div class="progress-bar progress-bar--light">
+              <div class="progress-bar__fill" animation="progress-bar">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
@@ -194,18 +348,31 @@
           <p class="footer__text footer__text--margin-bottom" animation="text">
             and fields
           </p>
-          <a href="#" class="footer__link" animation="footer-link" data-cursor="hover"
-            >About us</a
+          <a
+            href="/src/pages/about/about.html"
+            class="link link--always-dark"
+            data-cursor="hover"
+            animation="link"
           >
+            About us
+          </a>
         </div>
 
-        <div class="footer__progress-bar progress-bar">
+        <div
+          class="footer__progress-bar progress-bar progress-bar--always-dark"
+        >
           <div class="progress-bar__fill" animation="progress-bar">&nbsp;</div>
         </div>
 
         <div class="footer__section">
           <div class="carousel" animation="carousel-forward">
             <span class="carousel__span" animation="carousel-forward-span">
+              branding
+            </span>
+            <span class="carousel__span" animation="carousel-forward-span">
+              strategy
+            </span>
+            <span class="carousel__span" animation="carousel-forward-span">
               shift
             </span>
             <span class="carousel__span" animation="carousel-forward-span">
@@ -215,44 +382,49 @@
               direction
             </span>
             <span class="carousel__span" animation="carousel-forward-span">
-              design 
+              design
             </span>
             <span class="carousel__span" animation="carousel-forward-span">
-              technology consulting
+              technology
             </span>
             <span class="carousel__span" animation="carousel-forward-span">
-              branding
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-               strategy &nbsp;&nbsp;&nbsp;
+              consulting &nbsp;&nbsp;&nbsp;
             </span>
           </div>
           <div class="carousel footer__carousel" animation="carousel-backward">
             <span class="carousel__span" animation="carousel-backward-span">
-              shift
+              entertainment
             </span>
             <span class="carousel__span" animation="carousel-backward-span">
-              produce
+              fashion
             </span>
             <span class="carousel__span" animation="carousel-backward-span">
-              direction
+              music
             </span>
             <span class="carousel__span" animation="carousel-backward-span">
-              design 
+              food
             </span>
             <span class="carousel__span" animation="carousel-backward-span">
-              technology consulting
+              education
             </span>
             <span class="carousel__span" animation="carousel-backward-span">
-              branding
+              living space
             </span>
             <span class="carousel__span" animation="carousel-backward-span">
-              strategy &nbsp;&nbsp;&nbsp;
+              sports
+            </span>
+            <span class="carousel__span" animation="carousel-backward-span">
+              event
+            </span>
+            <span class="carousel__span" animation="carousel-backward-span">
+              product &nbsp;&nbsp;&nbsp;
             </span>
           </div>
         </div>
 
-        <div class="footer__progress-bar progress-bar">
+        <div
+          class="footer__progress-bar progress-bar progress-bar--always-dark"
+        >
           <div class="progress-bar__fill" animation="progress-bar">&nbsp;</div>
         </div>
 
@@ -305,7 +477,9 @@
           </div>
         </div>
 
-        <div class="footer__progress-bar progress-bar">
+        <div
+          class="footer__progress-bar progress-bar progress-bar--always-dark"
+        >
           <div class="progress-bar__fill" animation="progress-bar">&nbsp;</div>
         </div>
 
@@ -315,7 +489,9 @@
           </div>
         </div>
 
-        <div class="footer__progress-bar progress-bar">
+        <div
+          class="footer__progress-bar progress-bar progress-bar--always-dark"
+        >
           <div class="progress-bar__fill" animation="progress-bar-last">
             &nbsp;
           </div>
@@ -326,26 +502,29 @@
             <p class="footer__year">@2021</p>
             <div class="footer__link-container">
               <a
-                href="https://www.instagram.com/theshift.tokyo/"
-                class="footer__link"
+                href="#"
+                class="link link--always-dark"
                 data-cursor="hover"
-                animation="footer-link"
-                >Instagram</a
+                animation="link"
               >
+                Instagram
+              </a>
               <a
-                href="https://twitter.com/theshift_tokyo"
-                class="footer__link"
+                href="#"
+                class="link link--always-dark"
                 data-cursor="hover"
-                animation="footer-link"
-                >Twitter</a
+                animation="link"
               >
+                Twitter
+              </a>
               <a
-                href="https://www.behance.net/theshift"
-                class="footer__link"
+                href="#"
+                class="link link--always-dark"
                 data-cursor="hover"
-                animation="footer-link"
-                >Behance</a
+                animation="link"
               >
+                Behance
+              </a>
             </div>
 
             <div
@@ -353,6 +532,7 @@
               shell-button-target
             >
               <button
+                id="switch-color-mode"
                 class="shell-button shell-button--inverted"
                 type="button"
                 data-cursor="hover"
@@ -384,6 +564,17 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <div class="cursor">
+      <div class="cursor__circle">
+        <div class="cursor__text-container">
+          <span class="cursor__span">Explore</span>
+        </div>
+      </div>
+      <div class="cursor__image-container">
+        <div class="cursor__image-background"></div>
+      </div>
     </div>
 
     <script type="module" src="/src/pages/index/index.ts"></script>

@@ -7,13 +7,16 @@
 @import "./styles/base/utilities";
 
 // components
+@import "./components/about-us/about-us";
 @import "./components/arrow-button/arrow-button";
 @import "./components/carousel/carousel";
 @import "./components/cursor/cursor";
 @import "./components/forward-slider/forward-slider";
+@import "./components/link/link";
 @import "./components/logo/logo";
 @import "./components/perfil/perfil";
 @import "./components/progress-bar/progress-bar";
+@import "./components/project-item/project-item";
 @import "./components/swiper/swiper";
 @import "./components/perfil/perfil";
 @import "./components/shell-button/shell-button";
@@ -25,7 +28,10 @@
 @import "./layout/section/section";
 
 // pages
-@import "./pages/research/research";
 @import "./pages/about/about";
+@import "./pages/index/index";
+@import "./pages/research/research";
+
+// styles
 @import "./styles/base/base";
 @import "./styles/base/utilities";

@@ -1,0 +1,32 @@
+.about-us {
+  --position-x: 0;
+  background: var(--color-light-always);
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:link,
+  &:visited {
+    color: var(--color-dark-always);
+  }
+
+  &__span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid var(--color-dark-always);
+      transform: translateX(var(--position-x));
+    }
+  }
+}

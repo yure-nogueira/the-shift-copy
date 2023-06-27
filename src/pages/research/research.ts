@@ -1,13 +1,13 @@
 // components
 import "./../../components/carousel/carousel";
 import "./../../components/cursor/cursor";
+import "./../../components/link/link";
 import "./../../components/menu/menu";
 import "./../../components/progress-bar/progress-bar";
 import "./../../components/shell-button/shell-button";
 import "./../../components/switch-color-mode/switch-color-mode";
 
 // layout
-import "./../../layout/footer/footer";
 import "./../../layout/intro/intro";
 import "./../../layout/section/section";
 
@@ -24,9 +24,9 @@ import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {
-  const viewport = document.querySelector(".page-viewport");
-  const container = document.querySelector(".page-container");
-  smoothScroll(container, viewport);
+  // const viewport = document.querySelector(".page-viewport");
+  // const container = document.querySelector(".page-container");
+  // smoothScroll(container, viewport);
 
   const titles = document.querySelectorAll(`[animation=${DOM.researchTitle}]`);
   const images = document.querySelectorAll(`[animation=${DOM.researchImages}]`);
