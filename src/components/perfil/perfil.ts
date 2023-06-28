@@ -9,7 +9,9 @@ perfis.forEach((perfil) => {
   });
 
   perfil.addEventListener('click', () => {
-    const perfilText = perfil.querySelectorAll('.perfil__text');
+    const perfilText = perfil.querySelectorAll(
+      '[shell-button-target] .perfil__text'
+    );
 
     if (!perfilOpened) {
       perfilOpened = true;
