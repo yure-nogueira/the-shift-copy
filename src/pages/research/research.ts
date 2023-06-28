@@ -21,6 +21,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 
+import LocomotiveScroll from "locomotive-scroll";
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".page-container") as HTMLElement,
+  smooth: true,
+  lerp: 0.05,
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {

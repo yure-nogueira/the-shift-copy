@@ -7,7 +7,7 @@ Call this function FIRST (before you create your ScrollTriggers); it sets the
 default "scroller" for you (otherwise it'd be the window/body, but it should be 
 the content <div>) 
 */
-
+/*
 // this is the helper function that sets it all up. Pass in the content <div> and then the wrapping viewport <div> (can be the elements or selector text). It also sets the default "scroller" to the content so you don't have to do that on all your ScrollTriggers.
 export function smoothScroll(content, viewport, smoothness?) {
   content = gsap.utils.toArray(content)[0];
@@ -99,3 +99,4 @@ export function smoothScroll(content, viewport, smoothness?) {
     onRefresh: killScrub, // when the screen resizes, we just want the animation to immediately go to the appropriate spot rather than animating there, so basically kill the scrub.
   });
 }
+*/

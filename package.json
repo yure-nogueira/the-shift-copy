@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/locomotive-scroll": "^4.1.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
   "dependencies": {
     "gsap": "npm:@gsap/member@^3.12.1",
+    "locomotive-scroll": "^4.1.4",
     "sass": "^1.63.4",
     "split-type": "^0.3.3",
     "swiper": "^9.4.1"
