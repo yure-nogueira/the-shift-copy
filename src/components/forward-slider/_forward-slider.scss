@@ -4,9 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 140px;
-  margin-left: 70%;
-  transform: translateX(-100%);
   display: inline-block;
 
   &__title {
@@ -62,6 +59,17 @@
     align-items: center;
     overflow: hidden;
     font-size: 1.4rem;
+
+    @include breakpoint("md") {
+      left: -70px;
+    }
+
+    @include breakpoint("sm") {
+      bottom: -3rem;
+      top: unset;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__number-container {

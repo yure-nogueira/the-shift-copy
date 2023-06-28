@@ -1,4 +1,157 @@
 .home {
+  &__intro {
+    margin-bottom: 20rem;
+
+    @include breakpoint("sm") {
+      justify-content: flex-start;
+      padding-top: 18rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint("sm") {
+      width: 100%;
+    }
+  }
+
+  &__title-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(12, 1fr);
+
+    @include breakpoint("sm") {
+      flex: 1;
+      grid-template-rows: repeat(4, auto);
+    }
+  }
+
+  &__title-container {
+    overflow: hidden;
+
+    &--first {
+      grid-row: 1;
+      grid-column: 3 / 11;
+      margin: 0 auto;
+
+      @include breakpoint("sm") {
+        grid-column: 1 / -1;
+        margin: 0;
+      }
+    }
+
+    &--second {
+      grid-row: 2;
+      grid-column: 2 / 9;
+
+      @include breakpoint("lg") {
+        grid-column: 2 / -1;
+      }
+
+      @include breakpoint("sm") {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+      }
+    }
+
+    &--third {
+      grid-row: 3;
+      grid-column: 3 / 11;
+      margin: 0 auto;
+
+      @include breakpoint("sm") {
+        grid-column: 1 / -1;
+        margin: 0 0 0 auto;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 12rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    @include breakpoint("xl") {
+      font-size: 9.8rem;
+    }
+
+    @include breakpoint("lg") {
+      font-size: 7.6rem;
+    }
+
+    @include breakpoint("md") {
+      font-size: 5.8rem;
+    }
+
+    @include breakpoint("sm") {
+      font-size: 4.6rem;
+    }
+  }
+
+  &__description-container {
+    grid-row: 2;
+    grid-column: 9 / 12;
+    margin-left: 3rem;
+    overflow: hidden;
+
+    @include breakpoint("lg") {
+      position: absolute;
+      bottom: 12rem;
+      left: 4rem;
+      margin-left: 0;
+      width: 15rem;
+    }
+
+    @include breakpoint("sm") {
+      position: initial;
+      width: initial;
+      grid-row: 4;
+      grid-column: 1 / -1;
+      margin-top: 2rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  &__japanese {
+    display: flex;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    overflow: hidden;
+
+    @include breakpoint("sm") {
+      display: none;
+    }
+  }
+
+  &__time {
+    font-size: 1.3rem;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+  &__forward-slider {
+    position: absolute;
+    right: 4rem;
+    bottom: -16rem;
+
+    @include breakpoint("sm") {
+      position: initial;
+      margin-top: 5rem;
+    }
+  }
+
   &__what {
     background: var(--color-dark-always);
     color: var(--color-light-always);

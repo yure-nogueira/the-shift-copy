@@ -1,5 +1,5 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -21,23 +21,27 @@ const numbers = gsap.utils.toArray<HTMLElement>(
 const sliderTl = gsap.timeline({
   onComplete: () => {
     running = false;
-  }
+  },
 });
+// para animação ao carregar a tela
+const title = document.querySelector(".forward-slider__title");
+const container = document.querySelector(".forward-slider__container");
+const counter = document.querySelector(".forward-slider__counter");
 
-nextButton?.addEventListener('click', () => runSlider('forced'));
+nextButton?.addEventListener("click", () => runSlider("forced"));
 
 intervalId = setInterval(() => {
-  runSlider('natural');
+  runSlider("natural");
 }, automaticSlidingInterval);
 
-function runSlider(caller: 'natural' | 'forced') {
+function runSlider(caller: "natural" | "forced") {
   if (running) return;
   running = true;
 
-  if (caller === 'forced') {
+  if (caller === "forced") {
     clearInterval(intervalId);
     intervalId = setInterval(() => {
-      runSlider('natural');
+      runSlider("natural");
     }, automaticSlidingInterval);
   }
 
@@ -50,18 +54,18 @@ function runSlider(caller: 'natural' | 'forced') {
       .to(
         slide,
         {
-          xPercent: '+=100',
-          duration: 1
+          xPercent: "+=100",
+          duration: 1,
         },
-        '<'
+        "<"
       )
       .to(
         numbers[index],
         {
-          yPercent: '+=-100',
-          duration: 1
+          yPercent: "+=-100",
+          duration: 1,
         },
-        '<'
+        "<"
       );
 
     if (index === frontSlideIndex) {
@@ -75,12 +79,21 @@ function runSlider(caller: 'natural' | 'forced') {
   sliderTl
     .to(frontSlide, {
       xPercent: `+=-${slides.length * 100}`,
-      duration: 0
+      duration: 0,
     })
     .to(frontNumber, {
       yPercent: `+=${slides.length * 100}`,
-      duration: 0
+      duration: 0,
     });
 
   sliderTl.play();
 }
+
+// animação ao carregar a tela
+[title, container, counter].forEach((element) => {
+  gsap.from(element, {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+  });
+});
