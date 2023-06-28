@@ -5,6 +5,5 @@
   const html = document.querySelector("html");
   button.addEventListener("click", () => {
     html?.classList.toggle("light-mode");
-    console.log("click");
   });
 })();
