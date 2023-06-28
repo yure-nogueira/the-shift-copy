@@ -7,7 +7,7 @@ Call this function FIRST (before you create your ScrollTriggers); it sets the
 default "scroller" for you (otherwise it'd be the window/body, but it should be 
 the content <div>) 
 */
-
+/*
 // this is the helper function that sets it all up. Pass in the content <div> and then the wrapping viewport <div> (can be the elements or selector text). It also sets the default "scroller" to the content so you don't have to do that on all your ScrollTriggers.
 export function smoothScroll(content, viewport, smoothness?) {
   content = gsap.utils.toArray(content)[0];
@@ -97,5 +97,47 @@ export function smoothScroll(content, viewport, smoothness?) {
       }
     },
     onRefresh: killScrub, // when the screen resizes, we just want the animation to immediately go to the appropriate spot rather than animating there, so basically kill the scrub.
+  });
+}
+*/
+
+import Scrollbar from "smooth-scrollbar";
+
+// import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function smoothScroll() {
+  let bodyScrollBar = Scrollbar.init(document.body, {
+    damping: 0.03,
+    delegateTo: document,
+  });
+
+  bodyScrollBar.setPosition(0, 0);
+  bodyScrollBar.track.xAxis.element.remove();
+
+  ScrollTrigger.scrollerProxy(document.body, {
+    scrollTop(value) {
+      if (arguments.length) {
+        bodyScrollBar.scrollTop = value as number;
+      }
+      return bodyScrollBar.scrollTop;
+    },
+  });
+
+  bodyScrollBar.addListener(ScrollTrigger.update);
+
+  // This part is only necessary if you're using ScrollTrigger's markers:
+  if (document.querySelector(".gsap-marker-scroller-start")) {
+    const markers = gsap.utils.toArray('[class *= "gsap-marker"]');
+    bodyScrollBar.addListener(({ offset }) =>
+      gsap.set(markers, { marginTop: -offset.y })
+    );
+  }
+  // End section necessary only if you're using ScrollTrigger's markers
+
+  ScrollTrigger.defaults({
+    scroller: document.body, // neccessary setting for smooth-scrollbar on body
+    pinType: "transform", // neccessary setting for smooth-scrollbar on body
   });
 }

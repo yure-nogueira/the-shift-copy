@@ -167,4 +167,19 @@ body {
   font: 1rem/1.3 sans-serif;
   background: var(--color-dark);
   overflow-x: hidden !important;
+  overflow-y: auto;
+  height: 100vh;
+  // width: 100vw;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scrollbar-track {
+  background: transparent !important;
+}
+
+.scrollbar-thumb {
+  background: #777777 !important;
 }

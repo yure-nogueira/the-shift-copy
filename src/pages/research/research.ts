@@ -28,6 +28,8 @@ gsap.registerPlugin(ScrollTrigger);
   // const container = document.querySelector(".page-container");
   // smoothScroll(container, viewport);
 
+  smoothScroll();
+
   const titles = document.querySelectorAll(`[animation=${DOM.researchTitle}]`);
   const images = document.querySelectorAll(`[animation=${DOM.researchImages}]`);
   const descriptions = document.querySelectorAll(
