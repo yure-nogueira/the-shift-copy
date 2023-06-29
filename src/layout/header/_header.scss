@@ -8,6 +8,10 @@
   padding: 4.5rem 5.25rem;
   z-index: 99999;
 
+  @include breakpoint("sm") {
+    padding: 4rem 3rem 3rem;
+  }
+
   &__title {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -20,6 +24,12 @@
     transform: translateY(-10.2rem);
     border-radius: 16px;
     cursor: pointer;
+    border-radius: 1rem;
+    transition: all 0.1s;
+
+    @include breakpoint("sm") {
+      padding: 2rem;
+    }
   }
 
   &__menu-button {
@@ -76,10 +86,11 @@
       line-height: 1;
       font-size: 1.6rem;
       overflow: hidden;
+      color: var(--color-light-always);
 
       &::before {
         visibility: var(--before-visibility);
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
