@@ -8,7 +8,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         research: resolve(__dirname, 'src/pages/research/research.html'),
-        about: resolve(__dirname, 'src/pages/about/about.html')
+        about: resolve(__dirname, 'src/pages/about/about.html'),
+        projects: resolve(__dirname, 'src/pages/projects/projects.html')
       }
       // output: {
       //   entryFileNames: `assets/[name].js`,
