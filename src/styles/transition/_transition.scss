@@ -1,0 +1,47 @@
+/* Page load animation */
+// sem definir rules, isso vai ocorrer para todas as páginas
+// start
+.transition-once {
+  opacity: 0;
+}
+
+// transition
+.transition-once-active {
+  transition: opacity 1s linear 0.3s; // último valor é delay
+}
+
+// end
+.transition-once-to {
+  opacity: 1;
+}
+
+/* Fade out current container */
+// start
+.transition-leave {
+  opacity: 1;
+}
+
+// transition
+.transition-leave-active {
+  transition: opacity 1s linear;
+}
+
+// end
+.transition-leave-to {
+  opacity: 0;
+}
+
+// start
+.transition-enter {
+  opacity: 0;
+}
+
+// transition
+.transition-enter-active {
+  transition: opacity 1s linear;
+}
+
+// end
+.transition-enter-to {
+  opacity: 1;
+}

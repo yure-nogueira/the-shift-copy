@@ -18,7 +18,6 @@ let isLightMode = htmlEl.classList.contains("light-mode");
 const setLinkColor = function (isLightMode: boolean) {
   const links = document.querySelectorAll('[animation="menu-link"]');
   links.forEach((link) => {
-    console.log(link);
     gsap.set(link, {
       "--color-link": isLightMode
         ? "var(--color-dark-always)"

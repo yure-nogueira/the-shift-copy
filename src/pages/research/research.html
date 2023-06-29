@@ -7,467 +7,488 @@
     <link rel="stylesheet" href="./../../main.scss" />
     <title>THE SHIFT</title>
   </head>
-  <body>
-    <header class="header" animation="header">
-      <h1>
-        <a
-          class="header__title"
-          href="/index.html"
-          data-cursor="hover"
-          animation="header-title"
-        >
-          The Shift
-        </a>
-      </h1>
+  <body data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="research">
+      <header class="header" animation="header">
+        <h1>
+          <a
+            class="header__title"
+            href="/index.html"
+            data-cursor="hover"
+            animation="header-title"
+          >
+            The Shift
+          </a>
+        </h1>
 
-      <nav class="header__navigation" animation="menu">
-        <button
-          class="header__menu-button"
-          animation="menu-button"
-          type="button"
-        >
-          Menu
-          <span class="header__menu-button-shell" animation="menu-button-shell">
-          </span>
-        </button>
-
-        <ul class="header__links" animation="menu-links">
-          <li class="header__link">
-            <a href="/index.html" animation="menu-link" data-cursor="hover">
-              Home
-            </a>
-          </li>
-          <li class="header__link">
-            <a href="#" animation="menu-link" data-cursor="hover">Project</a>
-          </li>
-          <li class="header__link header__link--active">
-            <a
-              href="/src/pages/research/research.html"
-              animation="menu-link"
-              data-cursor="hover"
+        <nav class="header__navigation" animation="menu">
+          <button
+            class="header__menu-button"
+            animation="menu-button"
+            type="button"
+          >
+            Menu
+            <span
+              class="header__menu-button-shell"
+              animation="menu-button-shell"
             >
-              Research
-            </a>
-          </li>
-          <li class="header__link">
+            </span>
+          </button>
+
+          <ul class="header__links" animation="menu-links">
+            <li class="header__link">
+              <a href="/index.html" animation="menu-link" data-cursor="hover">
+                Home
+              </a>
+            </li>
+            <li class="header__link">
+              <a href="#" animation="menu-link" data-cursor="hover">Project</a>
+            </li>
+            <li class="header__link header__link--active">
+              <a
+                href="/src/pages/research/research.html"
+                animation="menu-link"
+                data-cursor="hover"
+              >
+                Research
+              </a>
+            </li>
+            <li class="header__link">
+              <a
+                href="/src/pages/about/about.html"
+                animation="menu-link"
+                data-cursor="hover"
+              >
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="page-container">
+        <main class="main research">
+          <section class="intro">
+            <div class="intro__container">
+              <div class="intro__overflow">
+                <h1 class="intro__title" animation="title">Always</h1>
+              </div>
+              <div class="intro__overflow intro__overflow--margin-bottom">
+                <h1 class="intro__title" animation="title">Exploring</h1>
+              </div>
+              <div class="intro__overflow">
+                <p class="intro__text" animation="intro-text">
+                  What is shifting and
+                </p>
+              </div>
+              <div class="intro__overflow">
+                <p class="intro__text" animation="intro-text">
+                  what can ve shifted
+                </p>
+              </div>
+            </div>
+            <div class="intro__overflow">
+              <span class="intro__scroll" animation="intro-text">(Scroll)</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section__heading-container">
+              <h3 class="section__heading" animation="text">
+                Remix: micro and macro
+              </h3>
+            </div>
+            <div class="section__progress">
+              <div class="section__progress-bar progress-bar">
+                <div class="progress-bar__fill" animation="progress-bar">
+                  &nbsp;
+                </div>
+              </div>
+              <div class="section__progress-text-container">
+                <p class="section__progress-text" animation="text">2023</p>
+                <p class="section__progress-text" animation="text">(01)</p>
+              </div>
+            </div>
+
+            <div class="research__section" data-cursor="explore">
+              <div class="research__top">
+                <div class="research__top-image-left">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193649/IMG_7015-720x720.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+                <div class="research__top-image-right">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193607/google-earth-view-1684-720x720.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+              </div>
+              <div class="research__middle">
+                <h1 class="research__title" animation="research-title">
+                  Remix
+                </h1>
+              </div>
+              <div class="research__bottom">
+                <div class="research__bottom-image-left">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193630/IMG_6970-720x720.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+                <div class="research__bottom-image-right">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193558/google-earth-view-1070-720x720.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+                <div
+                  class="research__description-container"
+                  animation="research-description"
+                >
+                  <p class="research__description">
+                    Remixing visual aspects shown in various layers in reality,
+                    we have created patterns that lie somewhere between reality
+                    and virtual, micro and macro.
+                  </p>
+                  <button class="arrow-button research__button">
+                    <ion-icon
+                      class="arrow-button__icon"
+                      name="arrow-forward-outline"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section__heading-container">
+              <h3 class="section__heading" animation="text">Borderless</h3>
+            </div>
+            <div class="section__progress">
+              <div class="section__progress-bar progress-bar">
+                <div class="progress-bar__fill" animation="progress-bar">
+                  &nbsp;
+                </div>
+              </div>
+              <div class="section__progress-text-container">
+                <p class="section__progress-text" animation="text">2021</p>
+                <p class="section__progress-text" animation="text">(05)</p>
+              </div>
+            </div>
+
+            <div class="research__section" data-cursor="explore">
+              <div class="research__top">
+                <div class="research__top-image-left">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231418/g1-1%402x-720x513.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+                <div class="research__top-image-right">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231421/g1-2%402x.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+              </div>
+              <div class="research__middle">
+                <h1 class="research__title" animation="research-title">
+                  Borderless
+                </h1>
+              </div>
+              <div class="research__bottom">
+                <div class="research__bottom-image-left">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231423/g1-3%402x-720x631.jpg.webp"
+                    alt="research-image-1"
+                    animation="research-image"
+                  />
+                </div>
+                <div class="research__bottom-image-right">
+                  <img
+                    class="research__image"
+                    src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231426/g1-4%402x-720x450.jpg.webp"
+                    animation="research-image"
+                  />
+                </div>
+                <div
+                  class="research__description-container"
+                  animation="research-description"
+                >
+                  <p class="research__description">
+                    Remixing visual aspects shown in various layers in reality,
+                    we have created patterns that lie somewhere between reality
+                    and virtual, micro and macro.
+                  </p>
+                  <button class="arrow-button research__button">
+                    <ion-icon
+                      class="arrow-button__icon"
+                      name="arrow-forward-outline"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer" animation="switch-color">
+          <div class="footer__section">
+            <p class="footer__text" animation="text">Our territory</p>
+            <p
+              class="footer__text footer__text--margin-bottom"
+              animation="text"
+            >
+              and fields
+            </p>
             <a
               href="/src/pages/about/about.html"
-              animation="menu-link"
+              class="link link--always-dark"
               data-cursor="hover"
+              animation="link"
             >
-              About
+              About us
             </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="page-container">
-      <main class="main research">
-        <section class="intro">
-          <div class="intro__container">
-            <div class="intro__overflow">
-              <h1 class="intro__title" animation="title">Always</h1>
-            </div>
-            <div class="intro__overflow intro__overflow--margin-bottom">
-              <h1 class="intro__title" animation="title">Exploring</h1>
-            </div>
-            <div class="intro__overflow">
-              <p class="intro__text" animation="intro-text">
-                What is shifting and
-              </p>
-            </div>
-            <div class="intro__overflow">
-              <p class="intro__text" animation="intro-text">
-                what can ve shifted
-              </p>
-            </div>
-          </div>
-          <div class="intro__overflow">
-            <span class="intro__scroll" animation="intro-text">(Scroll)</span>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section__heading-container">
-            <h3 class="section__heading" animation="text">
-              Remix: micro and macro
-            </h3>
-          </div>
-          <div class="section__progress">
-            <div class="section__progress-bar progress-bar">
-              <div class="progress-bar__fill" animation="progress-bar">
-                &nbsp;
-              </div>
-            </div>
-            <div class="section__progress-text-container">
-              <p class="section__progress-text" animation="text">2023</p>
-              <p class="section__progress-text" animation="text">(01)</p>
-            </div>
           </div>
 
-          <div class="research__section" data-cursor="explore">
-            <div class="research__top">
-              <div class="research__top-image-left">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193649/IMG_7015-720x720.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-              <div class="research__top-image-right">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193607/google-earth-view-1684-720x720.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-            </div>
-            <div class="research__middle">
-              <h1 class="research__title" animation="research-title">Remix</h1>
-            </div>
-            <div class="research__bottom">
-              <div class="research__bottom-image-left">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193630/IMG_6970-720x720.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-              <div class="research__bottom-image-right">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2023/04/09193558/google-earth-view-1070-720x720.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-              <div
-                class="research__description-container"
-                animation="research-description"
-              >
-                <p class="research__description">
-                  Remixing visual aspects shown in various layers in reality, we
-                  have created patterns that lie somewhere between reality and
-                  virtual, micro and macro.
-                </p>
-                <button class="arrow-button research__button">
-                  <ion-icon
-                    class="arrow-button__icon"
-                    name="arrow-forward-outline"
-                  ></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section__heading-container">
-            <h3 class="section__heading" animation="text">Borderless</h3>
-          </div>
-          <div class="section__progress">
-            <div class="section__progress-bar progress-bar">
-              <div class="progress-bar__fill" animation="progress-bar">
-                &nbsp;
-              </div>
-            </div>
-            <div class="section__progress-text-container">
-              <p class="section__progress-text" animation="text">2021</p>
-              <p class="section__progress-text" animation="text">(05)</p>
-            </div>
-          </div>
-
-          <div class="research__section" data-cursor="explore">
-            <div class="research__top">
-              <div class="research__top-image-left">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231418/g1-1%402x-720x513.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-              <div class="research__top-image-right">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231421/g1-2%402x.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-            </div>
-            <div class="research__middle">
-              <h1 class="research__title" animation="research-title">
-                Borderless
-              </h1>
-            </div>
-            <div class="research__bottom">
-              <div class="research__bottom-image-left">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231423/g1-3%402x-720x631.jpg.webp"
-                  alt="research-image-1"
-                  animation="research-image"
-                />
-              </div>
-              <div class="research__bottom-image-right">
-                <img
-                  class="research__image"
-                  src="https://d17292ff19wl6v.cloudfront.net/v2/wp/wp-content/uploads/2021/08/20231426/g1-4%402x-720x450.jpg.webp"
-                  animation="research-image"
-                />
-              </div>
-              <div
-                class="research__description-container"
-                animation="research-description"
-              >
-                <p class="research__description">
-                  Remixing visual aspects shown in various layers in reality, we
-                  have created patterns that lie somewhere between reality and
-                  virtual, micro and macro.
-                </p>
-                <button class="arrow-button research__button">
-                  <ion-icon
-                    class="arrow-button__icon"
-                    name="arrow-forward-outline"
-                  ></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer" animation="switch-color">
-        <div class="footer__section">
-          <p class="footer__text" animation="text">Our territory</p>
-          <p class="footer__text footer__text--margin-bottom" animation="text">
-            and fields
-          </p>
-          <a
-            href="/src/pages/about/about.html"
-            class="link link--always-dark"
-            data-cursor="hover"
-            animation="link"
+          <div
+            class="footer__progress-bar progress-bar progress-bar--always-dark"
           >
-            About us
-          </a>
-        </div>
-
-        <div
-          class="footer__progress-bar progress-bar progress-bar--always-dark"
-        >
-          <div class="progress-bar__fill" animation="progress-bar">&nbsp;</div>
-        </div>
-
-        <div class="footer__section">
-          <div class="carousel" animation="carousel-forward">
-            <span class="carousel__span" animation="carousel-forward-span">
-              branding
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              strategy
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              shift
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              produce
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              direction
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              design
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              technology
-            </span>
-            <span class="carousel__span" animation="carousel-forward-span">
-              consulting &nbsp;&nbsp;&nbsp;
-            </span>
-          </div>
-          <div class="carousel footer__carousel" animation="carousel-backward">
-            <span class="carousel__span" animation="carousel-backward-span">
-              entertainment
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              fashion
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              music
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              food
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              education
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              living space
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              sports
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              event
-            </span>
-            <span class="carousel__span" animation="carousel-backward-span">
-              product &nbsp;&nbsp;&nbsp;
-            </span>
-          </div>
-        </div>
-
-        <div
-          class="footer__progress-bar progress-bar progress-bar--always-dark"
-        >
-          <div class="progress-bar__fill" animation="progress-bar">&nbsp;</div>
-        </div>
-
-        <div class="footer__section">
-          <div class="footer__based">
-            <div class="footer__shell-container" shell-button-target>
-              <button
-                class="shell-button shell-button--inverted"
-                type="button"
-                data-cursor="hover"
-                animation="shell-button"
-                shell-button-toggles
-              >
-                <div class="shell-button__label-container">
-                  <span
-                    class="shell-button__label"
-                    animation="shell-button-default-label"
-                  >
-                    JA
-                  </span>
-                  <span
-                    class="shell-button__label"
-                    animation="shell-button-secondary-label"
-                  >
-                    EN
-                  </span>
-                </div>
-
-                <span
-                  class="shell-button__shell"
-                  animation="shell-button-shell"
-                >
-                </span>
-              </button>
-            </div>
-
-            <div class="footer__text-container">
-              <p class="footer__text" animation="text">Based in Tokyo</p>
-              <p class="footer__text" animation="text">Working worldwide</p>
-            </div>
-            <div class="footer__up" animation="text" data-cursor="hover">
-              <p class="footer__text footer__text--thin">Back to top</p>
-              <button class="arrow-button arrow-button--up footer__button-up">
-                <ion-icon
-                  class="arrow-button__icon"
-                  name="arrow-forward-outline"
-                ></ion-icon>
-              </button>
+            <div class="progress-bar__fill" animation="progress-bar">
+              &nbsp;
             </div>
           </div>
-        </div>
 
-        <div
-          class="footer__progress-bar progress-bar progress-bar--always-dark"
-        >
-          <div class="progress-bar__fill" animation="progress-bar">&nbsp;</div>
-        </div>
-
-        <div class="footer__section">
-          <div class="footer__overflow">
-            <h2 class="footer__touch" animation="title-scroll">Get in touch</h2>
-          </div>
-        </div>
-
-        <div
-          class="footer__progress-bar progress-bar progress-bar--always-dark"
-        >
-          <div class="progress-bar__fill" animation="progress-bar-last">
-            &nbsp;
-          </div>
-        </div>
-
-        <div class="footer__section">
-          <div class="footer__social">
-            <p class="footer__year">@2021</p>
-            <div class="footer__link-container">
-              <a
-                href="#"
-                class="link link--always-dark"
-                data-cursor="hover"
-                animation="link"
-              >
-                Instagram
-              </a>
-              <a
-                href="#"
-                class="link link--always-dark"
-                data-cursor="hover"
-                animation="link"
-              >
-                Twitter
-              </a>
-              <a
-                href="#"
-                class="link link--always-dark"
-                data-cursor="hover"
-                animation="link"
-              >
-                Behance
-              </a>
+          <div class="footer__section">
+            <div class="carousel" animation="carousel-forward">
+              <span class="carousel__span" animation="carousel-forward-span">
+                branding
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                strategy
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                shift
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                produce
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                direction
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                design
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                technology
+              </span>
+              <span class="carousel__span" animation="carousel-forward-span">
+                consulting &nbsp;&nbsp;&nbsp;
+              </span>
             </div>
-
             <div
-              class="footer__shell-container footer__shell-container--dark"
-              shell-button-target
+              class="carousel footer__carousel"
+              animation="carousel-backward"
             >
-              <button
-                id="switch-color-mode"
-                class="shell-button shell-button--inverted"
-                type="button"
-                data-cursor="hover"
-                animation="shell-button"
-                shell-button-toggles
-              >
-                <div class="shell-button__label-container">
-                  <span
-                    class="shell-button__label"
-                    animation="shell-button-default-label"
-                  >
-                    Light mode
-                  </span>
-                  <span
-                    class="shell-button__label"
-                    animation="shell-button-secondary-label"
-                  >
-                    Dark mode
-                  </span>
-                </div>
-
-                <span
-                  class="shell-button__shell"
-                  animation="shell-button-shell"
-                >
-                </span>
-              </button>
+              <span class="carousel__span" animation="carousel-backward-span">
+                entertainment
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                fashion
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                music
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                food
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                education
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                living space
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                sports
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                event
+              </span>
+              <span class="carousel__span" animation="carousel-backward-span">
+                product &nbsp;&nbsp;&nbsp;
+              </span>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
 
-    <div class="cursor">
-      <div class="cursor__circle">
-        <div class="cursor__text-container">
-          <span class="cursor__span">Explore</span>
-        </div>
+          <div
+            class="footer__progress-bar progress-bar progress-bar--always-dark"
+          >
+            <div class="progress-bar__fill" animation="progress-bar">
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <div class="footer__based">
+              <div class="footer__shell-container" shell-button-target>
+                <button
+                  class="shell-button shell-button--inverted"
+                  type="button"
+                  data-cursor="hover"
+                  animation="shell-button"
+                  shell-button-toggles
+                >
+                  <div class="shell-button__label-container">
+                    <span
+                      class="shell-button__label"
+                      animation="shell-button-default-label"
+                    >
+                      JA
+                    </span>
+                    <span
+                      class="shell-button__label"
+                      animation="shell-button-secondary-label"
+                    >
+                      EN
+                    </span>
+                  </div>
+
+                  <span
+                    class="shell-button__shell"
+                    animation="shell-button-shell"
+                  >
+                  </span>
+                </button>
+              </div>
+
+              <div class="footer__text-container">
+                <p class="footer__text" animation="text">Based in Tokyo</p>
+                <p class="footer__text" animation="text">Working worldwide</p>
+              </div>
+              <div class="footer__up" animation="text" data-cursor="hover">
+                <p class="footer__text footer__text--thin">Back to top</p>
+                <button class="arrow-button arrow-button--up footer__button-up">
+                  <ion-icon
+                    class="arrow-button__icon"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="footer__progress-bar progress-bar progress-bar--always-dark"
+          >
+            <div class="progress-bar__fill" animation="progress-bar">
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <div class="footer__overflow">
+              <h2 class="footer__touch" animation="title-scroll">
+                Get in touch
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="footer__progress-bar progress-bar progress-bar--always-dark"
+          >
+            <div class="progress-bar__fill" animation="progress-bar-last">
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <div class="footer__social">
+              <p class="footer__year">@2021</p>
+              <div class="footer__link-container">
+                <a
+                  href="#"
+                  class="link link--always-dark"
+                  data-cursor="hover"
+                  animation="link"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="#"
+                  class="link link--always-dark"
+                  data-cursor="hover"
+                  animation="link"
+                >
+                  Twitter
+                </a>
+                <a
+                  href="#"
+                  class="link link--always-dark"
+                  data-cursor="hover"
+                  animation="link"
+                >
+                  Behance
+                </a>
+              </div>
+
+              <div
+                class="footer__shell-container footer__shell-container--dark"
+                shell-button-target
+              >
+                <button
+                  id="switch-color-mode"
+                  class="shell-button shell-button--inverted"
+                  type="button"
+                  data-cursor="hover"
+                  animation="shell-button"
+                  shell-button-toggles
+                >
+                  <div class="shell-button__label-container">
+                    <span
+                      class="shell-button__label"
+                      animation="shell-button-default-label"
+                    >
+                      Light mode
+                    </span>
+                    <span
+                      class="shell-button__label"
+                      animation="shell-button-secondary-label"
+                    >
+                      Dark mode
+                    </span>
+                  </div>
+
+                  <span
+                    class="shell-button__shell"
+                    animation="shell-button-shell"
+                  >
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-      <div class="cursor__image-container">
-        <div class="cursor__image-background"></div>
+
+      <div class="cursor">
+        <div class="cursor__circle">
+          <div class="cursor__text-container">
+            <span class="cursor__span">Explore</span>
+          </div>
+        </div>
+        <div class="cursor__image-container">
+          <div class="cursor__image-background"></div>
+        </div>
       </div>
     </div>
 

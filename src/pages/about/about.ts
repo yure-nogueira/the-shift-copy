@@ -24,6 +24,9 @@ import {
   scrollSetup,
 } from "./../../utilities/gsap/helper-functions/smooth-scroll";
 
+// barba
+import "./../../utilities/barba/barba";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -43,6 +46,7 @@ gsap.registerPlugin(ScrollTrigger);
       y: -30,
       scrollTrigger: {
         trigger: title,
+        scroller: container,
         scrub: 1,
       },
     });

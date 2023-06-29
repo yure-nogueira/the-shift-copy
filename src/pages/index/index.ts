@@ -23,6 +23,9 @@ import {
   scrollSetup,
 } from "./../../utilities/gsap/helper-functions/smooth-scroll";
 
+// barba
+import "./../../utilities/barba/barba";
+
 (() => {
   scrollSetup(locoScroll, container);
 })();
