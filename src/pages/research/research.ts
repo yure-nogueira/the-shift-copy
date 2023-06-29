@@ -15,7 +15,11 @@ import "./../../layout/section/section";
 // utilities
 import "./../../utilities/animation-text";
 import "./../../utilities/animation-title";
-import { scroll } from "./../../utilities/gsap/helper-functions/smooth-scroll";
+import {
+  container,
+  locoScroll,
+  scrollSetup,
+} from "./../../utilities/gsap/helper-functions/smooth-scroll";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -25,7 +29,7 @@ import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {
-  scroll();
+  scrollSetup(locoScroll, container);
 
   const titles = document.querySelectorAll(`[animation=${DOM.researchTitle}]`);
   const images = document.querySelectorAll(`[animation=${DOM.researchImages}]`);

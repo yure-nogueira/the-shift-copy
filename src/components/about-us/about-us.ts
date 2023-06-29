@@ -1,13 +1,17 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { scroll } from "./../../utilities/gsap/helper-functions/smooth-scroll";
+import {
+  container,
+  locoScroll,
+  scrollSetup,
+} from "./../../utilities/gsap/helper-functions/smooth-scroll";
 import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {
-  scroll();
+  scrollSetup(locoScroll, container);
 
   const aboutUs = document.querySelector(`[animation=${DOM.aboutUs}]`);
 
