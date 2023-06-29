@@ -51,8 +51,11 @@ export const scrollSetup = function (
 
 // scrollSetup(locoScroll, container);
 
-export const scrollToTop = function (button: HTMLElement) {
+export const scrollToTop = function (
+  locomotiveScroll: LocomotiveScroll,
+  button: HTMLElement
+) {
   button.addEventListener("click", () => {
-    console.log(button);
+    locomotiveScroll.scrollTo(0);
   });
 };

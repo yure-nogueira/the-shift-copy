@@ -10,6 +10,7 @@ import "./../../components/shell-button/shell-button";
 import "./../../components/switch-color-mode/switch-color-mode";
 
 // layout
+import "./../../layout/footer/footer";
 import "./../../layout/intro/intro";
 import "./../../layout/section/section";
 
