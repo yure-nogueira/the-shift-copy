@@ -8,59 +8,56 @@
     <title>THE SHIFT</title>
   </head>
   <body>
-    <div class="page-container">
-      <header class="header" animation="header">
-        <h1>
-          <a class="header__title" href="/index.html" data-cursor="hover">
-            The Shift
-          </a>
-        </h1>
+    <header class="header" animation="header">
+      <h1>
+        <a class="header__title" href="/index.html" data-cursor="hover">
+          The Shift
+        </a>
+      </h1>
 
-        <nav class="header__navigation" animation="menu">
-          <button
-            class="header__menu-button"
-            animation="menu-button"
-            type="button"
-          >
-            Menu
-            <span
-              class="header__menu-button-shell"
-              animation="menu-button-shell"
+      <nav class="header__navigation" animation="menu">
+        <button
+          class="header__menu-button"
+          animation="menu-button"
+          type="button"
+        >
+          Menu
+          <span class="header__menu-button-shell" animation="menu-button-shell">
+          </span>
+        </button>
+
+        <ul class="header__links" animation="menu-links">
+          <li class="header__link">
+            <a href="/index.html" animation="menu-link" data-cursor="hover">
+              Home
+            </a>
+          </li>
+          <li class="header__link">
+            <a href="#" animation="menu-link" data-cursor="hover">Project</a>
+          </li>
+          <li class="header__link header__link--active">
+            <a
+              href="/src/pages/research/research.html"
+              animation="menu-link"
+              data-cursor="hover"
             >
-            </span>
-          </button>
+              Research
+            </a>
+          </li>
+          <li class="header__link">
+            <a
+              href="/src/pages/about/about.html"
+              animation="menu-link"
+              data-cursor="hover"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-          <ul class="header__links" animation="menu-links">
-            <li class="header__link header__link--active">
-              <a href="/index.html" animation="menu-link" data-cursor="hover">
-                Home
-              </a>
-            </li>
-            <li class="header__link">
-              <a href="#" animation="menu-link" data-cursor="hover">Project</a>
-            </li>
-            <li class="header__link">
-              <a
-                href="/src/pages/research/research.html"
-                animation="menu-link"
-                data-cursor="hover"
-              >
-                Research
-              </a>
-            </li>
-            <li class="header__link">
-              <a
-                href="/src/pages/about/about.html"
-                animation="menu-link"
-                data-cursor="hover"
-              >
-                About
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
+    <div class="page-container">
       <main class="main research">
         <section class="intro">
           <div class="intro__container">
