@@ -1,11 +1,14 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { scroll } from "./../../utilities/gsap/helper-functions/smooth-scroll";
 import { DOM, SCROLL_POSITION } from "./../../utilities/constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {
+  scroll();
+
   const progressBars = gsap.utils.toArray<HTMLElement>(
     `[animation=${DOM.progressBar}]`
   );

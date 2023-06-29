@@ -16,3 +16,6 @@ import "./../../layout/section/section";
 // utilities
 import "./../../utilities/animation-text";
 import "./../../utilities/animation-title";
+import { scroll } from "./../../utilities/gsap/helper-functions/smooth-scroll";
+
+scroll();
