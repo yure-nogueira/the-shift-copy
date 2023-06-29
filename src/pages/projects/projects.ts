@@ -1,17 +1,21 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Draggable } from 'gsap/Draggable';
+// components
+import "./../../components/cursor/cursor";
+import "./../../components/menu/menu";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Draggable } from "gsap/Draggable";
 
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
 let iteration = 0; // gets iterated when we scroll all the way to the end or start and wraps around - allows us to smoothly continue the playhead scrubbing in the correct direction.
 
 // set initial state of items
-gsap.set('.card', { xPercent: 500 });
+gsap.set(".card", { xPercent: 500 });
 
 const spacing = 0.1, // spacing of the cards (stagger)
   snapTime = gsap.utils.snap(spacing), // we'll use this to snapTime the playhead on the seamlessLoop
-  cards = gsap.utils.toArray('.card'),
+  cards = gsap.utils.toArray(".card"),
   // this function will get called for each element in the buildSeamlessLoop() function, and we just need to return an animation that'll get inserted into a master timeline, spaced
   animateFunc = (element: any) => {
     const tl = gsap.timeline();
@@ -23,13 +27,13 @@ const spacing = 0.1, // spacing of the cards (stagger)
         duration: 2,
         // yoyo: true,
         // repeat: 1,
-        ease: 'power1.in',
-        immediateRender: false
+        ease: "power1.in",
+        immediateRender: false,
       }
     ).fromTo(
       element,
       { xPercent: 500 },
-      { xPercent: -500, duration: 1, ease: 'none', immediateRender: false },
+      { xPercent: -500, duration: 1, ease: "none", immediateRender: false },
       0
     );
     return tl;
@@ -44,8 +48,8 @@ const spacing = 0.1, // spacing of the cards (stagger)
       seamlessLoop.time(wrapTime(playhead.offset)); // convert the offset to a "safe" corresponding time on the seamlessLoop timeline
     },
     duration: 2,
-    ease: 'power3',
-    paused: true
+    ease: "power3",
+    paused: true,
   }),
   trigger = ScrollTrigger.create({
     start: 0,
@@ -61,8 +65,8 @@ const spacing = 0.1, // spacing of the cards (stagger)
         scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
       }
     },
-    end: '+=10000',
-    pin: '.gallery'
+    end: "+=10000",
+    pin: ".gallery",
   }),
   // converts a progress value (0-1, but could go outside those bounds when wrapping) into a "safe" scroll value that's at least 1 away from the start or end because we reserve those for sensing when the user scrolls ALL the way up or down, to wrap.
   progressToScroll = (progress: any) =>
@@ -78,7 +82,7 @@ const spacing = 0.1, // spacing of the cards (stagger)
   };
 
 // when the user stops scrolling, snap to the closest item.
-ScrollTrigger.addEventListener('scrollEnd', () =>
+ScrollTrigger.addEventListener("scrollEnd", () =>
   scrollToOffset(scrub.vars.offset)
 );
 
@@ -97,13 +101,13 @@ function scrollToOffset(offset: any) {
 }
 
 document
-  ?.querySelector('.next')
-  ?.addEventListener('click', () =>
+  ?.querySelector(".next")
+  ?.addEventListener("click", () =>
     scrollToOffset(scrub.vars.offset + spacing)
   );
 document
-  ?.querySelector('.prev')
-  ?.addEventListener('click', () =>
+  ?.querySelector(".prev")
+  ?.addEventListener("click", () =>
     scrollToOffset(scrub.vars.offset - spacing)
   );
 
@@ -119,7 +123,7 @@ function buildSeamlessLoop(items: any, spacing: any, animateFunc: any) {
       },
       onReverseComplete() {
         this.totalTime(this.rawTime() + this.duration() * 100); // seamless looping backwards
-      }
+      },
     }),
     cycleDuration = spacing * items.length,
     dur: any; // the duration of just one animateFunc() (we'll populate it in the .forEach() below...
@@ -138,21 +142,21 @@ function buildSeamlessLoop(items: any, spacing: any, animateFunc: any) {
   seamlessLoop.fromTo(
     rawSequence,
     {
-      time: cycleDuration + dur / 2
+      time: cycleDuration + dur / 2,
     },
     {
-      time: '+=' + cycleDuration,
+      time: "+=" + cycleDuration,
       duration: cycleDuration,
-      ease: 'none'
+      ease: "none",
     }
   );
   return seamlessLoop;
 }
 
 // below is the dragging functionality (mobile-friendly too)...
-Draggable.create('.drag-proxy', {
-  type: 'x',
-  trigger: '.cards',
+Draggable.create(".drag-proxy", {
+  type: "x",
+  trigger: ".cards",
   onPress() {
     this.startOffset = scrub.vars.offset;
   },
@@ -162,18 +166,18 @@ Draggable.create('.drag-proxy', {
   },
   onDragEnd() {
     scrollToOffset(scrub.vars.offset);
-  }
+  },
 });
 
 (() => {
   let progress = Math.round(seamlessLoop.progress() * 100);
-  const progressEl = document.querySelector('.progress__value') as HTMLElement;
+  const progressEl = document.querySelector(".progress__value") as HTMLElement;
 
-  gsap.to('.card-img', {
+  gsap.to(".card-img", {
     scrollTrigger: {
-      trigger: '.gallery',
+      trigger: ".gallery",
       start: 0,
-      end: '+=16000',
+      end: "+=16000",
       scrub: 3,
       onUpdate: () => {
         const currentProgress = Math.round(seamlessLoop.progress() * 100);
@@ -182,53 +186,53 @@ Draggable.create('.drag-proxy', {
           progress = currentProgress;
           progressEl.textContent = progress.toString();
         }
-      }
+      },
     },
-    xPercent: -50
+    xPercent: -50,
   });
 })();
 
 (() => {
-  const cards = gsap.utils.toArray<HTMLElement>('.card');
+  const cards = gsap.utils.toArray<HTMLElement>(".card");
 
   cards.forEach((card) => {
-    const cardTarget = card.querySelector('.card-content') as HTMLElement;
-    const linkButton = card.querySelector('.card-button');
-    const title = card.querySelector('.title-inner');
+    const cardTarget = card.querySelector(".card-content") as HTMLElement;
+    const linkButton = card.querySelector(".card-button");
+    const title = card.querySelector(".title-inner");
 
-    cardTarget.addEventListener('mouseenter', () => {
+    cardTarget.addEventListener("mouseenter", () => {
       gsap.fromTo(
         linkButton,
         {
-          scale: 0
+          scale: 0,
         },
-        { scale: 1, duration: 0.4, ease: 'power1.in' }
+        { scale: 1, duration: 0.4, ease: "power1.in" }
       );
 
       gsap.fromTo(
         title,
         {
-          yPercent: 0
+          yPercent: 0,
         },
-        { yPercent: -100, duration: 0.4, ease: 'power1.in' }
+        { yPercent: -100, duration: 0.4, ease: "power1.in" }
       );
     });
 
-    cardTarget.addEventListener('mouseleave', () => {
+    cardTarget.addEventListener("mouseleave", () => {
       gsap.fromTo(
         linkButton,
         {
-          scale: 1
+          scale: 1,
         },
-        { scale: 0, duration: 0.2, ease: 'power1.out' }
+        { scale: 0, duration: 0.2, ease: "power1.out" }
       );
 
       gsap.fromTo(
         title,
         {
-          yPercent: -100
+          yPercent: -100,
         },
-        { yPercent: 0, duration: 0.2, ease: 'power1.out' }
+        { yPercent: 0, duration: 0.2, ease: "power1.out" }
       );
     });
   });

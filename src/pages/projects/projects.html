@@ -8,6 +8,60 @@
     <title>THE SHIFT</title>
   </head>
   <body>
+    <header class="header" animation="header">
+      <h1>
+        <a
+          class="header__title"
+          href="/index.html"
+          data-cursor="hover"
+          animation="header-title"
+        >
+          The Shift
+        </a>
+      </h1>
+
+      <nav class="header__navigation" animation="menu">
+        <button
+          class="header__menu-button"
+          animation="menu-button"
+          type="button"
+        >
+          Menu
+          <span class="header__menu-button-shell" animation="menu-button-shell">
+          </span>
+        </button>
+
+        <ul class="header__links" animation="menu-links">
+          <li class="header__link">
+            <a href="/index.html" animation="menu-link" data-cursor="hover">
+              Home
+            </a>
+          </li>
+          <li class="header__link header__link--active">
+            <a href="#" animation="menu-link" data-cursor="hover">Project</a>
+          </li>
+          <li class="header__link">
+            <a
+              href="/src/pages/research/research.html"
+              animation="menu-link"
+              data-cursor="hover"
+            >
+              Research
+            </a>
+          </li>
+          <li class="header__link">
+            <a
+              href="/src/pages/about/about.html"
+              animation="menu-link"
+              data-cursor="hover"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="gallery">
       <div class="progress">
         <span>(</span>
@@ -29,7 +83,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-1.jpg" alt="" />
           </div>
         </li>
@@ -46,7 +100,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-2.jpg" alt="" />
           </div>
         </li>
@@ -63,7 +117,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-3.jpg" alt="" />
           </div>
         </li>
@@ -80,7 +134,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-4.jpg" alt="" />
           </div>
         </li>
@@ -97,7 +151,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-5.jpg" alt="" />
           </div>
         </li>
@@ -114,7 +168,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-6.jpg" alt="" />
           </div>
         </li>
@@ -131,7 +185,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-7.jpg" alt="" />
           </div>
         </li>
@@ -148,7 +202,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-8.jpg" alt="" />
           </div>
         </li>
@@ -165,7 +219,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-9.jpg" alt="" />
           </div>
         </li>
@@ -182,7 +236,7 @@
           </button>
           <div class="title"><div class="title-inner">card title</div></div>
           <div class="year"><div class="year-inner">2023</div></div>
-          <div class="card-content">
+          <div class="card-content" data-cursor="hover">
             <img class="card-img" src="/images/img-10.jpg" alt="" />
           </div>
         </li>
@@ -195,7 +249,7 @@
     </div>
     <div class="drag-proxy"></div>
 
-    <!-- <div class="cursor">
+    <div class="cursor">
       <div class="cursor__circle">
         <div class="cursor__text-container">
           <span class="cursor__span">Explore</span>
@@ -204,7 +258,7 @@
       <div class="cursor__image-container">
         <div class="cursor__image-background"></div>
       </div>
-    </div> -->
+    </div>
 
     <script type="module" src="./projects.ts"></script>
     <script
