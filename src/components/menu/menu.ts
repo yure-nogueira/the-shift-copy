@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
+import { DOM } from "./../../utilities/constants";
+
 // plugins
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -9,6 +11,21 @@ gsap.registerPlugin(ScrollToPlugin);
 // variables
 const navigation = document.querySelector('[animation="menu"]');
 let removeTimeline: () => void;
+const htmlEl = document.querySelector("html") as HTMLElement;
+let isLightMode = htmlEl.classList.contains("light-mode");
+
+// function to set link color
+const setLinkColor = function (isLightMode: boolean) {
+  const links = document.querySelectorAll('[animation="menu-link"]');
+  links.forEach((link) => {
+    console.log(link);
+    gsap.set(link, {
+      "--color-link": isLightMode
+        ? "var(--color-dark-always)"
+        : "var(--color-light-always)",
+    });
+  });
+};
 
 //
 // header page load animations
@@ -61,7 +78,11 @@ function setOuterMenuAnimations() {
       start: "bottom top",
       toggleActions: "play none reverse none",
       onEnter: setInnerMenuAnimations,
-      onLeaveBack: () => removeTimeline(),
+      onLeaveBack: () => {
+        removeTimeline();
+        isLightMode = htmlEl.classList.contains("light-mode");
+        setLinkColor(isLightMode);
+      },
     },
   });
 
@@ -95,6 +116,9 @@ function setOuterMenuAnimations() {
 // header menu inner animations
 //
 function setInnerMenuAnimations() {
+  isLightMode = false;
+  setLinkColor(isLightMode);
+
   let menuInnerTL: gsap.core.Timeline | null = gsap.timeline({
     defaults: { ease: "none" },
   });
@@ -187,3 +211,51 @@ function setInnerMenuAnimations() {
     menuInnerTL = null;
   };
 }
+
+//
+// invert the color of "the shift" text
+//
+export const switchColor = function () {
+  const htmlEl = document.querySelector("html") as HTMLElement;
+  let isLightMode = htmlEl.classList.contains("light-mode");
+  const headerTitle = document.querySelector(
+    `[animation=${DOM.headerTitle}]`
+  ) as HTMLElement;
+  const switchColorSections = gsap.utils.toArray<HTMLElement>(
+    `[animation=${DOM.switchColor}]`
+  );
+  const changingColor = gsap.timeline({ duration: 0.1 });
+
+  switchColorSections.forEach((section) => {
+    changingColor
+      .to(headerTitle, {
+        "--invert": isLightMode ? "1" : "0",
+        scrollTrigger: {
+          trigger: section,
+          scroller: ".page-container",
+          start: "top 50px",
+          end: "top 50px",
+          scrub: true,
+          // markers: true,
+        },
+        onReverseComplete: () => {
+          headerTitle?.style.setProperty("--invert", "0");
+        },
+      })
+      .to(headerTitle, {
+        "--invert": "0",
+        scrollTrigger: {
+          trigger: section,
+          scroller: ".page-container",
+          start: "bottom 50px",
+          end: "bottom 50px",
+          scrub: true,
+          // markers: true,
+        },
+        onReverseComplete: () => {
+          isLightMode = htmlEl.classList.contains("light-mode");
+          headerTitle?.style.setProperty("--invert", isLightMode ? "1" : "0");
+        },
+      });
+  });
+};
