@@ -5,11 +5,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 4.5rem 5.25rem;
+  padding: 4.5rem 5.25rem 0;
   z-index: 99999;
+  pointer-events: none;
 
-  @include breakpoint("sm") {
-    padding: 4rem 3rem 3rem;
+  @include breakpoint('sm') {
+    padding: 4rem 3rem 0;
   }
 
   &__title {
@@ -17,6 +18,7 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     filter: invert(var(--invert));
+    pointer-events: all;
   }
 
   &__navigation {
@@ -28,8 +30,9 @@
     cursor: pointer;
     border-radius: 1rem;
     transition: all 0.1s;
+    pointer-events: all;
 
-    @include breakpoint("sm") {
+    @include breakpoint('sm') {
       padding: 2rem;
     }
   }
@@ -64,7 +67,7 @@
   &__links {
     padding-right: 1.125rem;
     margin-top: 4.725rem;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   &__link {
@@ -93,7 +96,7 @@
 
       &::before {
         visibility: var(--before-visibility);
-        content: "";
+        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
