@@ -148,7 +148,7 @@
   overflow: hidden;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -176,4 +176,32 @@
 .drag-proxy {
   visibility: hidden;
   position: absolute;
+}
+
+.gallery-progress {
+  position: fixed;
+  width: 30%;
+  height: 8px;
+  bottom: 50px;
+  left: 50px;
+  background-color: var(--color-text-gray);
+  border-radius: 100px;
+  overflow: hidden;
+
+  @include breakpoint("md") {
+    display: none;
+  }
+
+  &__fill {
+    --progress: 0;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(calc(var(--progress) * 1%), -50%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-border-line-dark);
+    border-radius: 100px;
+    transition: transform 0.8s;
+  }
 }
