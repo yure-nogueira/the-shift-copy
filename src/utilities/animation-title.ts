@@ -1,8 +1,8 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SplitType from "split-type";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SplitType from 'split-type';
 
-import { DOM, SCROLL_POSITION } from "./constants";
+import { DOM, SCROLL_POSITION } from './constants';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
       opacity: 0,
       y: 100,
       scale: 0.9,
-      stagger: { amount: 0.5 },
+      stagger: { amount: 0.5 }
     });
   }
 
@@ -29,12 +29,12 @@ gsap.registerPlugin(ScrollTrigger);
         scale: 0.9,
         stagger: { amount: 0.4 },
         scrollTrigger: {
-          trigger: title,
+          trigger: title as any,
           start: SCROLL_POSITION.start,
           end: SCROLL_POSITION.end,
-          toggleActions: "play none none reverse",
+          toggleActions: 'play none none reverse'
           // markers: true,
-        },
+        }
       });
     });
   }
