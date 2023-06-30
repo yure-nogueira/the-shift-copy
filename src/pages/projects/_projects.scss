@@ -48,6 +48,7 @@
   width: 30%;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -56,7 +57,6 @@
   font-size: 2rem;
   font-family: sans-serif;
   list-style: none;
-  background-color: transparent;
   border-right: 60px solid transparent;
   cursor: pointer;
 
@@ -69,26 +69,51 @@
   }
 }
 
-.card-button {
+.wrapper {
   position: absolute;
-  right: 15px;
-  bottom: 60px;
-  z-index: 999;
-  transform: scale(0);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 85%;
 }
 
-.title {
+.title-container {
   position: absolute;
-  left: 0;
-  bottom: 20px;
-  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  width: calc(100% + 120px);
+  font-size: 4.5rem;
   text-transform: uppercase;
   line-height: 1;
   z-index: 999;
+}
+
+.title {
+  white-space: nowrap;
+  text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .title-inner {
+  transform: translateY(100%);
+  text-align: center;
+}
+
+.small-title {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1;
+  z-index: 999;
+  transform: translateY(100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.small-title-inner {
   transform: translateY(100%);
 }
 
@@ -99,20 +124,39 @@
   font-size: 1.5rem;
   line-height: 1;
   z-index: 999;
-  transform: rotate(90deg) translateX(230%) translateY(calc(-100% - 10px));
+  transform: rotate(90deg) translateX(100%) translateY(calc(-100% - 10px));
   transform-origin: top right;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .year-inner {
-  transform: translateY();
+  transform: translateY(100%);
+}
+
+.card-button {
+  position: absolute;
+  right: 15px;
+  bottom: 60px;
+  z-index: 999;
+  transform: scale(0);
 }
 
 .card-content {
   position: relative;
   width: 100%;
-  height: 85%;
+  height: 100%;
   overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    opacity: 0.5;
+  }
 }
 
 .card-img {
