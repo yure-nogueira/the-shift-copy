@@ -10,6 +10,56 @@
   background-color: transparent;
 }
 
+.projects-header {
+  &__navigation {
+    transition: all 0.3s;
+
+    @include breakpoint("md") {
+      transform: translateY(-3.5rem);
+    }
+
+    @include breakpoint("sm") {
+      transform: translateY(-2rem);
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__menu-button {
+    &:hover {
+      .header__menu-button-shell {
+        transform: translateY(0);
+      }
+
+      .projects-header__link a::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    @include breakpoint("md") {
+      opacity: 1;
+    }
+  }
+
+  &__menu-button-shell {
+    transition: all 0.3s;
+  }
+
+  &__links {
+    @include breakpoint("md") {
+      margin-top: 2rem;
+    }
+  }
+
+  &__link {
+    @include breakpoint("md") {
+      transform: translateY(100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
 .progress {
   position: fixed;
   top: 4.5rem;
